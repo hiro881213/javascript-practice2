@@ -32,8 +32,23 @@ $(document).ready(() => {
 
     }
 
+    // 対象タグを読み込む
+    paper.setup(document.getElementById("clickCanvas"));
+
+    // ツールを定義する
+    let tool = new Tool();
+
+    // マウスクリック処理
+    tool.onMouseDown = (event) => {
+
+        // 円を生成する
+        let c = Shape.Circle(event.point.x, event.point.y, 20);
+
+        c.fillColor = 'blue';
+
+    }
+
     // 図形を描画する
     paper.view.draw();
-
 
 });
