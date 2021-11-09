@@ -38,6 +38,26 @@ $(document).ready(() => {
     // ツールを定義する
     let tool = new Tool();
 
+    // 円
+    let ct = Shape.Circle(200, 200, 80);
+
+    ct.fillColor = 'black';
+
+    // テキストを生成する
+    let text = new PointText(200, 200);
+
+    // テキストを中央揃えをする
+    text.justification = 'center';
+
+    // テキストの色を設定する
+    text.fillColor = 'white';
+
+    // フォントサイズ
+    text.fontSize = 20;
+
+    // 文字列
+    text.content = 'Hello World!';
+
     // マウスクリック処理
     tool.onMouseDown = (event) => {
 
@@ -48,7 +68,7 @@ $(document).ready(() => {
 
     }
 
-    // 図形を描画する
-    paper.view.draw();
+    // // 図形を描画する
+    // paper.view.draw();
 
 });
