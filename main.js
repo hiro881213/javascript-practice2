@@ -1,5 +1,7 @@
 $(document).ready(() => {
 
+    outputLogData();
+
     'use strict';
 
     // ペーパーを読み込む
