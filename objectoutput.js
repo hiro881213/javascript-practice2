@@ -99,5 +99,31 @@ function outputLogData() {
     console.log(halloweenParty.getSeconds());
     console.log(halloweenParty.getMilliseconds());
 
+    const numStr = "33.3";
+    const num = Number(numStr);
+    console.log(num);
+
+    const parA = parseInt("16 volts", 10);
+    console.log(parA);
+    
+    const parB = parseInt("3a", 16);
+    console.log(parB);
+
+    const parC = parseFloat("15.5 kph");
+    console.log(parC);
+
+    const parD = new Date();
+    console.log(parD);
+    const ts = parD.valueOf();
+    console.log(ts);
+
+    const bb = true;
+    const cc = false;
+
+    const n = bb ? 1 : 0;
+    console.log(n);
+
+    const m = cc ? 1 : 0;
+    console.log(m);
 
 }
