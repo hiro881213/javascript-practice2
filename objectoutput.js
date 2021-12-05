@@ -48,5 +48,11 @@ function outputLogData() {
 
     console.log(sam3);
 
+    const s = "hello";
+
+    // 大文字に変換する
+    const s2 = s.toUpperCase();
+
+    console.log(s2);
 
 }
