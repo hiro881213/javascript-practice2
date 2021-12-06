@@ -1,5 +1,9 @@
 function outputLogData() {
-    
+
+    // --------------------------------------
+    // オブジェクト型
+    // --------------------------------------
+
     // オブジェクト
     const sam1 = {
         name : "Sam",
@@ -55,6 +59,10 @@ function outputLogData() {
 
     console.log(s2);
 
+    // --------------------------------------
+    // 配列
+    // --------------------------------------
+
     const a1 = [1, 2, 3, 4];
 
     const a2 = [1, 'two', 3, null];
@@ -81,6 +89,10 @@ function outputLogData() {
     console.log(a1[0]);
     console.log(a3[a3.length - 2]);
 
+    // --------------------------------------
+    // Date型
+    // --------------------------------------
+
     // システム日付を取得する
     const now = new Date();
     console.log(now);
@@ -98,6 +110,10 @@ function outputLogData() {
     console.log(halloweenParty.getMinutes());
     console.log(halloweenParty.getSeconds());
     console.log(halloweenParty.getMilliseconds());
+
+    // --------------------------------------
+    // 数値
+    // --------------------------------------
 
     const numStr = "33.3";
     const num = Number(numStr);
@@ -117,6 +133,10 @@ function outputLogData() {
     const ts = parD.valueOf();
     console.log(ts);
 
+    // --------------------------------------
+    // 論理値
+    // --------------------------------------
+
     const bb = true;
     const cc = false;
 
@@ -125,5 +145,13 @@ function outputLogData() {
 
     const m = cc ? 1 : 0;
     console.log(m);
+
+    const nn = 0;
+    const b0 = !nn;
+    const b1 = Boolean(nn);
+    
+    console.log(nn);
+    console.log(b0);
+    console.log(b1);
 
 }
