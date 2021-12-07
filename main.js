@@ -2,6 +2,7 @@ $(document).ready(() => {
 
     // makeFirstProgram()
     // outputLogData();
-    playGame();
+    // playGame();
+    fibonacci();
 
 });
