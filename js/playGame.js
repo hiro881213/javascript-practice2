@@ -57,7 +57,7 @@ function playGame() {
 
                 // 賭ける対象を選択する
                 let face = randFace();
-                alert(face);
+
                 // 掛け金を追加する
                 bets[face] = bets[face] + bet;
 
@@ -73,10 +73,7 @@ function playGame() {
 
         console.log(
             `掛け金: ${totalBet} (` + 
-            Object.keys(bets).map(
-                face =>{
-                    `${face}: ${bets[face]}`
-                }).join(', ')
+            Object.keys(bets).map(face => `${face}: ${bets[face]}`).join(', ')
             + `)`);
 
         // サイコロを振る
