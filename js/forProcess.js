@@ -47,7 +47,7 @@ function forProcess() {
     
     }
 
-    const bigArrayOfNumbers = [4, 6, 7, 8, 9];
+    let bigArrayOfNumbers = [4, 6, 7, 8, 9];
     let i = 0;
 
     for (; i < bigArrayOfNumbers.length; i++)
@@ -55,5 +55,12 @@ function forProcess() {
     
     if (i === bigArrayOfNumbers.length) console.log("素数なし");
     else console.log(`最初の素数位置:${i} 素数の値: ${bigArrayOfNumbers[i]}`);
+
+    // 素数削除処理
+    i = 0;
+    for (; i < bigArrayOfNumbers.length; i++)
+        if (isPrime(bigArrayOfNumbers[i])) bigArrayOfNumbers.splice(i, 1);
+
+    console.log(bigArrayOfNumbers);
 
 }
