@@ -4,5 +4,6 @@ $(document).ready(() => {
     // outputLogData();
     // playGame();
     fibonacci();
+    forProcess();
 
 });
