@@ -2,8 +2,12 @@ $(document).ready(() => {
 
     // makeFirstProgram()
     // outputLogData();
-    // playGame();
-    fibonacci();
-    forProcess();
 
+    // chap4
+    // playGame();
+    // fibonacci();
+    // forProcess();
+
+    // chap5
+    culcValue();
 });
