@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
     // makeFirstProgram()
-    // outputLogData();
+    outputLogData();
 
     // chap4
     // playGame();
