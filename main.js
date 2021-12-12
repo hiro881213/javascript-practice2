@@ -9,5 +9,6 @@ $(document).ready(() => {
     // forProcess();
 
     // chap5
-    culcValue();
+    // culcValue();
+    culcOperator();
 });
