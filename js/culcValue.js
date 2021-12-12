@@ -61,5 +61,11 @@ function culcValue() {
 
     console.log("----デクリメント----");
 
+    let y = 10;
+
+    console.log(y-- + y-- + " yの値:" + y);   // 10 + 9
+    console.log(--y + --y + " yの値:" + y);   // 7 + 6
+    console.log(y-- + --y + " yの値:" + y);   // 6 + 4
+    console.log(--y + y-- + " yの値:" + y);   // 3 + 3
 
 }
