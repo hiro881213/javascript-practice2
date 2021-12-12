@@ -71,7 +71,30 @@ function valueOperator() {
     console.log(a2);
     console.log(b2);
     console.log(c2);
-    
 
+    console.log("-----分割代入-配列----");
+
+    const arr = [1, 2, 3];
+    let [x, y] = arr;
+
+    console.log(x);
+    console.log(y);
+
+    console.log("-----分割代入-配列2----");
+
+    const arr2 = [1, 2, 3, 4, 5];
+    let [x2, y2, ...rest] = arr2;
+
+    console.log(x2);
+    console.log(y2);
+    console.log(rest);
+
+    console.log("-----分割代入-配列3----");
+
+    let aaa = 5, bbb = 10;
+    [aaa, bbb] = [bbb, aaa];
+
+    console.log(aaa);
+    console.log(bbb);
 
 }
