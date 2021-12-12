@@ -68,4 +68,13 @@ function logicOperator() {
     options = suppliedOptions || {name: "デフォルト"};
     console.log(options);
 
+    console.log("----カンマ演算子----");
+
+    let a = 0, b = 10, z;
+    z = (a++, b++);
+    console.log(z);
+
+    z = a++, b++;
+    console.log(z);
+
 }
