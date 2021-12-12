@@ -77,4 +77,31 @@ function logicOperator() {
     z = a++, b++;
     console.log(z);
 
+    console.log("----ビット化----");
+
+    function formatBinary(x) {
+
+        // 2進数表記にする
+        const y = x.toString(2);
+
+        return ("0000" + y).substr(-4);
+
+    }
+
+    const FLAG_READ = 1;
+    const FLAG_WRITE = 2;
+    const FLAG_EXECUTE = 4;
+
+    console.log(formatBinary(FLAG_READ));
+    console.log(formatBinary(FLAG_WRITE));
+    console.log(formatBinary(FLAG_EXECUTE));
+
+    // OR演算
+    console.log(formatBinary(FLAG_READ | FLAG_WRITE));
+
+
+
+
+
+
 }
