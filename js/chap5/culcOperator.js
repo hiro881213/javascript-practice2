@@ -47,4 +47,16 @@ function culcOperator () {
     console.log(5 < 5);
     console.log(5 <= 5);
 
+    console.log("-----NaNについて-----")
+
+    console.log(NaN === NaN);
+    console.log(NaN == NaN);
+    console.log(isNaN(NaN));
+    console.log(isNaN(3));
+    console.log(isNaN(3.6));
+    console.log(isNaN("abc"));
+ 
+    console.log("-----無限ループ回避-----")
+
+
 }
