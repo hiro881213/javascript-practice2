@@ -12,7 +12,7 @@ $(document).ready(() => {
     // culcValue();
     // culcOperator();
     // logicOperator();
-
-    valueOperator();
+    // valueOperator();
+    omitOperator();
 
 });
