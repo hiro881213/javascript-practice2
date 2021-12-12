@@ -52,4 +52,20 @@ function logicOperator() {
     console.log(result3);
     console.log(result4);
 
+    console.log("----短絡評価2----");
+
+    let suppliedOptions;
+
+    let options = suppliedOptions || {name: "デフォルト"};
+    console.log(options);
+
+    suppliedOptions = null;
+    
+    options = suppliedOptions || {name: "デフォルト"};
+    console.log(options);
+
+    suppliedOptions = {name: "xxx"};
+    options = suppliedOptions || {name: "デフォルト"};
+    console.log(options);
+
 }
