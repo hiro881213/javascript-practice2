@@ -99,9 +99,26 @@ function logicOperator() {
     // OR演算
     console.log(formatBinary(FLAG_READ | FLAG_WRITE));
 
+    console.log("----ビット演算子----");
 
+    let p = FLAG_READ | FLAG_WRITE;
+    console.log(formatBinary(p));
 
+    let hasWrite = p & FLAG_WRITE ? "Yes" : "No";
+    console.log(`書き込みパーミション:${hasWrite}`);
 
+    let hasExecute = p & FLAG_EXECUTE ? "Yes" : "No";
+    console.log(`実行パーミション:${hasExecute}`);
+
+    // XOR処理
+    p = p^FLAG_WRITE;
+    console.log(formatBinary(p));
+
+    p = p^FLAG_WRITE;
+    console.log(formatBinary(p));
+
+    const hasReadAndWrite = p & (FLAG_READ | FLAG_WRITE) ? "可" : "不可";
+    console.log(`読み書き:${hasReadAndWrite}`);
 
 
 }
