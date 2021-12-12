@@ -18,4 +18,10 @@ function valueOperator() {
     console.log(typeof Symbol());
     console.log(typeof function(){});
 
+    console.log("-----typeof演算子(変数)----");
+
+    let a = (typeof undefined);
+    console.log(typeof a);
+    console.log(void 1);
+
 }
