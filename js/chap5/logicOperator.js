@@ -33,5 +33,23 @@ function logicOperator() {
     if (' ') console.log("t"); else console.log("f");
     if ('false') console.log("t"); else console.log("f");
 
+    console.log("----短絡評価----");
+
+    const skipIt = true;
+    const skipIt2 = false;
+
+    let x = 0;
+
+    const result = skipIt || x++;
+    const result2 = skipIt2 || x++;
+
+    console.log(result);
+    console.log(result2);
+
+    const result3 = skipIt && x++;
+    const result4 = skipIt2 && x++;
+
+    console.log(result3);
+    console.log(result4);
 
 }
