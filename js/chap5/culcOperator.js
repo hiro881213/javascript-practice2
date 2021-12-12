@@ -57,6 +57,19 @@ function culcOperator () {
     console.log(isNaN("abc"));
  
     console.log("-----無限ループ回避-----")
+    
+    let xx = 0;
+
+    while(true) {
+        xx += 0.1
+        console.log(xx);
+        
+        if (Math.abs(xx - 0.3) < Number.EPSILON) break;
+        // if (xx === 0.3) break;
+
+    }
+
+    console.log(`${xx}で停止`);
 
 
 }
