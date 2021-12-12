@@ -11,5 +11,8 @@ $(document).ready(() => {
     // chap5
     // culcValue();
     // culcOperator();
-    logicOperator()
+    // logicOperator();
+
+    valueOperator();
+
 });
