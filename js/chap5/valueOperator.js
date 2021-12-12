@@ -24,4 +24,12 @@ function valueOperator() {
     console.log(typeof a);
     console.log(void 1);
 
+    console.log("-----代入演算子----");
+
+    let v,v0;
+    v = v0 = 9.8;
+
+    console.log(v);
+    console.log(v0);
+
 }
