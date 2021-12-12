@@ -35,4 +35,10 @@ function omitOperator() {
     label = isPrime(nn) ? '素数': '非素数';
     console.log(label);
 
+    console.log("-----短絡論理OR-----");
+
+    let options;
+    options = options || {};
+    console.log(options);
+
 }
