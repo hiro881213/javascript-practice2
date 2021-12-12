@@ -21,4 +21,17 @@ function logicOperator() {
     // ''
     if ('') console.log("t"); else console.log("f");
 
+    console.log("----論理値2----");
+
+    const obj1 = {};
+
+    if (obj1) console.log("t"); else console.log("f");
+
+    const arr = [];
+
+    if (arr) console.log("t"); else console.log("f");
+    if (' ') console.log("t"); else console.log("f");
+    if ('false') console.log("t"); else console.log("f");
+
+
 }
