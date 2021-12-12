@@ -9,7 +9,7 @@ function culcOperator () {
 
     console.log(x);
 
-    console.log("-----等価演算子-----")
+    console.log("-----等価演算子(プリニティブ)-----")
 
     const n = 5;
     const s = "5";
@@ -22,5 +22,29 @@ function culcOperator () {
 
     console.log(n == s);
     console.log(n != s);
+
+    console.log("-----等価演算子(オブジェクト)-----")
+
+    const a = { name: "あるオブジェクト"};
+    const b = { name: "あるオブジェクト"};
+
+    console.log(a === b);
+    console.log(a !== b);
+    console.log(a == b);
+    console.log(a != b);
+
+    console.log("-----関係演算子-----")
+
+    console.log(3 > 5);
+    console.log(3 >= 5);
+    
+    console.log(3 < 5);
+    console.log(3 <= 5);
+
+    console.log(5 > 5);
+    console.log(5 >= 5);
+
+    console.log(5 < 5);
+    console.log(5 <= 5);
 
 }
