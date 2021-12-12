@@ -59,5 +59,19 @@ function valueOperator() {
     console.log(c);
     // console.log(d);
 
+    console.log("-----分割代入2----");
+
+    const obj2 = {b2: 2, c2: 3, d2: 4};
+
+    let b2, c2, d2;
+
+    // 分割代入(括弧で囲む必要がある)
+    ({a2, b2, c2} = obj2);
+
+    console.log(a2);
+    console.log(b2);
+    console.log(c2);
+    
+
 
 }
