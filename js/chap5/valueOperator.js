@@ -20,8 +20,8 @@ function valueOperator() {
 
     console.log("-----typeof演算子(変数)----");
 
-    let a = (typeof undefined);
-    console.log(typeof a);
+    let aa = (typeof undefined);
+    console.log(typeof aa);
     console.log(void 1);
 
     console.log("-----代入演算子----");
@@ -46,4 +46,18 @@ function valueOperator() {
 
     console.log(`10より小さい数字を発見:${n}`);
     console.log(`未チェックの数字の個数:${nums.length - i}`);
+
+    console.log("-----分割代入----");
+
+    const obj = {b: 2, c: 3, d: 4};
+
+    // 分割代入
+    const {a, b, c} = obj;
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    // console.log(d);
+
+
 }
