@@ -12,5 +12,7 @@ function outFunction() {
 
     const message = getGreeting();
     console.log(message);
-
+    
+    console.log(getGreeting());
+    console.log(getGreeting);
 }
