@@ -13,6 +13,10 @@ $(document).ready(() => {
     // culcOperator();
     // logicOperator();
     // valueOperator();
-    omitOperator();
+    // omitOperator();
+
+    // chap6
+    outFunction();
+
 
 });
