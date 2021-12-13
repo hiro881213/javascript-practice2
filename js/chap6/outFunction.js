@@ -31,4 +31,11 @@ function outFunction() {
     console.log(f);
     console.log(f());
 
+    console.log("-----オブジェクトに関数を代入------");
+
+    const o = {};
+    o.f = getGreeting;
+    console.log(o.f());
+
+
 }
