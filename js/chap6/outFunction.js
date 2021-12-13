@@ -37,5 +37,13 @@ function outFunction() {
     o.f = getGreeting;
     console.log(o.f());
 
+    console.log("-----配列に関数を代入------");
+
+    const arr = [1, 2, 3];
+    arr[1] = getGreeting;
+
+    const message2 = arr[1]();
+
+    console.log(message2);
 
 }
