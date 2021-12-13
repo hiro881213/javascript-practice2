@@ -6,4 +6,11 @@ function outFunction() {
 
     sayHello();
 
+    function getGreeting() {
+        return "Hello World!";
+    }
+
+    const message = getGreeting();
+    console.log(message);
+
 }
