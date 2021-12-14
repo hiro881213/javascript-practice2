@@ -16,7 +16,7 @@ $(document).ready(() => {
     // omitOperator();
 
     // chap6
-    outFunction();
-
+    // outFunction();
+    argumentFunction();
 
 });
