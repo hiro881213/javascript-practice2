@@ -42,4 +42,28 @@ function argumentFunction() {
     f2(o);
     console.log(`関数f2を呼び出した後:o.message = ${o.message}`);
 
+    console.log("-----オブジェクト変更関数2------");
+
+    function f3(o) {
+
+        console.log(`f3の中(2つの代入の前):o3.message = ${o.message}`);
+        o.message = "f3で最初にセットされた"
+        console.log(`f3の中(2つの代入の後): o3.message = ${o.message}`);
+
+        o = {
+            message: "新しいオブジェクト!"
+        };
+
+        console.log(`f3の中(2つの代入の後): o.message = ${o.message}`);
+
+    }
+
+    let o3 = {
+        message: '初期値'
+    }
+
+    console.log(`fの呼び出し前:o.message = ${o3.message}`);
+    f3(o3);
+    console.log(`fの呼び出し後:o.message = ${o3.message}`);
+
 }
