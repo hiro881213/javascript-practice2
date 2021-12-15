@@ -51,5 +51,14 @@ function argumentFunction2() {
     console.log(dog);
     console.log(dog.bark());
 
+    console.log("-----オブジェクトとthis-----");
+
+    const dog2 = {
+        name: "ワンワン",
+        speak() { return `${this.name}だぞ` }
+    }
+
+    console.log(dog2);
+    console.log(dog2.speak());
 
 }
