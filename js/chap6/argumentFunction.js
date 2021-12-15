@@ -1,5 +1,5 @@
 function argumentFunction() {
-    
+
     console.log("-----平均計算処理------");
 
     // 平均計算関数
