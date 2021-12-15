@@ -14,4 +14,13 @@ function argumentFunction2() {
 
     console.log(getSentance(o));
 
+    console.log("-----配列の分割代入-----");
+
+    function getArrSentence([subject, verb, object]) {
+        return `${subject} ${verb} ${object}`
+    }
+
+    const arr = ["I", "love", "Java"];
+    console.log(getArrSentence(arr));
+
 }
