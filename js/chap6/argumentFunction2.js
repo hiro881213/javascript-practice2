@@ -40,6 +40,16 @@ function argumentFunction2() {
 
     console.log(addPrefix("con", "verse", "vex"));
     console.log(addPrefix("非", "プログラマー", "デザイナー", "コーダー"));
-    
+
+    console.log("-----メソッドの省略記法-----");
+
+    const dog = {
+        name: "ワンワン",
+        bark() { return "ガオガオ"},
+    }
+
+    console.log(dog);
+    console.log(dog.bark());
+
 
 }
