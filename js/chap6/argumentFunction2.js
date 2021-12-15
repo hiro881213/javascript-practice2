@@ -23,4 +23,23 @@ function argumentFunction2() {
     const arr = ["I", "love", "Java"];
     console.log(getArrSentence(arr));
 
+    console.log("-----スプレッド演算子と引数-----");
+
+    // スプレッド演算子関数
+    function addPrefix(prefix, ...words) {
+
+        const prefixedWords = [];
+
+        for ( let i = 0; i < words.length; i++ ) {
+            prefixedWords[i] = prefix + words[i]
+        }
+
+        return prefixedWords;
+
+    }
+
+    console.log(addPrefix("con", "verse", "vex"));
+    console.log(addPrefix("非", "プログラマー", "デザイナー", "コーダー"));
+    
+
 }
