@@ -61,4 +61,8 @@ function argumentFunction2() {
     console.log(dog2);
     console.log(dog2.speak());
 
+    console.log("-----オブジェクトとthis2-----");
+    console.log(dog2.speak());
+
+
 }
