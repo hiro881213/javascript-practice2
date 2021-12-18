@@ -73,4 +73,33 @@ function argumentFunction2() {
     console.log(speak === o2.speak);
     console.log(o2.speak());
 
+    console.log("-----オブジェクトとthis3-----");
+
+    const o3 = {
+        name: 'Julie',
+        
+        greetBackwards: () => {
+            
+            const self = this;
+
+            function getReverseName() {
+                
+                let nameBackwards = '';
+
+                for (let i = self.name.length - 1; i >=0; i--) {
+                    nameBackwards += self.name[i];
+                }
+                
+                return nameBackwards;
+
+            }
+
+            return `${getReverseName()} si eman ym, olleH`;
+
+        },
+
+    };
+
+    console.log(o3.greetBackwards());
+
 }
