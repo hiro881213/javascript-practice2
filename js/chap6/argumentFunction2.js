@@ -62,7 +62,15 @@ function argumentFunction2() {
     console.log(dog2.speak());
 
     console.log("-----オブジェクトとthis2-----");
-    console.log(dog2.speak());
 
+    const o2 = {
+        name : 'Wallace',
+        speak() { return `My name is ${this.name}!` }
+    }
+
+    const speak = o2.speak;
+
+    console.log(speak === o2.speak);
+    console.log(o2.speak());
 
 }
