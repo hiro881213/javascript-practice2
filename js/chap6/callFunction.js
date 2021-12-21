@@ -45,4 +45,18 @@ function callFunction() {
 
     console.log(o.greetBackwards());
 
-}
+    console.log("------Call------");
+
+    const bruce = { name : "ブルース"};
+    const wanwan = { name : "ワンワン"};
+    
+    function greet() {
+        return `私は${this.name}です`;
+    }
+
+    console.log(greet());
+    console.log(greet.call(bruce));
+    console.log(greet.call(wanwan));
+
+
+}   
