@@ -48,7 +48,7 @@ function callFunction() {
     console.log("------Call------");
 
     const bruce = { name : "ブルース"};
-    const wanwan = { name : "ワンワン"};
+    let wanwan = { name : "ワンワン"};
     
     function greet() {
         return `私は${this.name}です`;
@@ -58,5 +58,27 @@ function callFunction() {
     console.log(greet.call(bruce));
     console.log(greet.call(wanwan));
 
+    console.log("------Call(オブジェクト書き換え)------");
 
+    // オブジェクト更新関数
+    function update(birthYear, occupation) {
+
+        this.birth  = birthYear;
+        this.career = occupation;
+
+    }
+
+    // オブジェクトの項目を書き換える
+    update.call(wanwan, 1988, "Scientist");
+
+    console.log(wanwan);
+
+    console.log("------Apply------");
+
+    wanwan = { name : "ワンワン"};
+
+    // Applyでオブジェクトを書き換える
+    update.apply(wanwan, [1988, "Engineer"]);
+
+    console.log(wanwan);
 }   
