@@ -81,4 +81,12 @@ function callFunction() {
     update.apply(wanwan, [1988, "Engineer"]);
 
     console.log(wanwan);
-}   
+
+    console.log("------Math.min/Math.maxとapply------");
+
+    const arr = [2, 3, -5, 15, 7];
+
+    console.log(Math.min.apply(null, arr));
+    console.log(Math.max.apply(null, arr));
+
+}
