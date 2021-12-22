@@ -19,6 +19,8 @@ $(document).ready(() => {
     // outFunction();
     // argumentFunction();
     // argumentFunction2();
-    callFunction();
+    // callFunction();
 
+    // chap7
+    scopeFunction();
 });
