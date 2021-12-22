@@ -47,7 +47,7 @@ function callFunction() {
 
     console.log("------Call------");
 
-    const bruce = { name : "ブルース"};
+    let bruce = { name : "ブルース"};
     let wanwan = { name : "ワンワン"};
     
     function greet() {
@@ -88,5 +88,23 @@ function callFunction() {
 
     console.log(Math.min.apply(null, arr));
     console.log(Math.max.apply(null, arr));
+
+    console.log("------Math.min/Math.maxとスプレッド演算子------");
+
+    console.log("------bind------");
+
+    wanwan = { name : "ワンワン"};
+    
+    // thisはwanwanに束縛される
+    const updateWanwan = update.bind(wanwan);
+
+    console.log(wanwan);
+    updateWanwan(1988, "Creator");
+
+    console.log(wanwan);
+
+    updateWanwan.call(bruce, 1997, "Poor");
+    console.log(bruce);
+    console.log(wanwan);
 
 }
