@@ -90,6 +90,11 @@ function callFunction() {
     console.log(Math.max.apply(null, arr));
 
     console.log("------Math.min/Math.maxとスプレッド演算子------");
+    console.log(...arr);
+    console.log(Math.min(...arr));
+    console.log(Math.max(...arr));
+    
+
 
     console.log("------bind------");
 
