@@ -94,7 +94,7 @@ function callFunction() {
     console.log("------bind------");
 
     wanwan = { name : "ワンワン"};
-    
+
     // thisはwanwanに束縛される
     const updateWanwan = update.bind(wanwan);
 
@@ -105,6 +105,24 @@ function callFunction() {
 
     updateWanwan.call(bruce, 1997, "Poor");
     console.log(bruce);
+
+    // wanwanの値が変わってしまう
     console.log(wanwan);
+
+    console.log("------bind(引数固定)------");
+
+    wanwan = { name : "ワンワン"};
+
+    // 引数固定bind
+    updateWanwan1988 = update.bind(wanwan, 1988);
+
+    console.log(wanwan);
+
+    // 引数バインド関数を実行
+    updateWanwan1988("singer");
+
+    console.log(wanwan);
+
+
 
 }
