@@ -46,5 +46,24 @@ function scopeFunction() {
     greet();
     console.log(getBirthYear());
 
+    console.log("------グローバルスコープ2------");
+
+    let user = {
+        name: 'ワンワン',
+        age: 33
+    };
+
+    function greet2(person) {
+        console.log(`${person.name}だぞ！！`);
+    }
+
+    function getBirthYear2(person) {
+        return new Date().getFullYear() - person.age;
+    }
+
+    greet2(user);
+    console.log(getBirthYear2(user));
+
+
 }
 
