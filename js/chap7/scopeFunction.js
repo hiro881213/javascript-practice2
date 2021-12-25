@@ -115,5 +115,30 @@ function scopeFunction() {
 
     console.log(typeof x);
 
+    console.log("------入れ子のブロックスコープ2------");
+
+    /* 外側ブロック */
+    {
+        let x = { color: "青" };
+        let y = x;
+        let z = 3;
+
+        /* 内側ブロック */
+        {
+            let x = 1000;
+            console.log(y.color);
+            y.color = "赤";
+
+            console.log(z);
+
+        }
+
+        console.log(x.color);
+        console.log(y.color);
+        console.log(z);
+
+    }
+
+
 }
 
