@@ -28,5 +28,23 @@ function scopeFunction() {
 
     f3();
 
+    console.log("------グローバルスコープ------");
+
+    let name = 'ワンワン';
+    let age = 33;
+
+    function greet() {
+
+        console.log(`こんにちは${name}さん`);
+    
+    }
+
+    function getBirthYear() {
+        return new Date().getFullYear() - age;
+    }
+
+    greet();
+    console.log(getBirthYear());
+
 }
 
