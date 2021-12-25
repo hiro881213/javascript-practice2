@@ -78,5 +78,23 @@ function scopeFunction() {
 
 //    console.log(bx);
 
+    console.log("------変数の隠蔽------");
+
+    // ブロック1
+    {
+        const bx = '青';
+        console.log(bx);
+    }
+
+    console.log(typeof bx);
+
+    // ブロック2
+    {
+        const bx = 3;
+        console.log(bx);
+    }
+
+    console.log(typeof bx);
+
 }
 
