@@ -64,6 +64,19 @@ function scopeFunction() {
     greet2(user);
     console.log(getBirthYear2(user));
 
+    console.log("------ブロックスコープ------");
+
+    console.log("ブロックの前");
+
+    {
+        console.log("ブロックの中");
+        const bx = 3;
+        console.log(bx);
+    }
+
+    console.log("ブロックの外");
+
+//    console.log(bx);
 
 }
 
