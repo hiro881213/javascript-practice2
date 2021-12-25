@@ -96,5 +96,24 @@ function scopeFunction() {
 
     console.log(typeof bx);
 
+    console.log("------入れ子のブロックスコープ------");
+
+    /* 外側ブロック */
+    {
+        let x = '青';
+        console.log(x);
+
+        /* 内側ブロック */
+        {
+            let x = 100;
+            console.log(x);
+        }
+
+        console.log(x);
+
+    }
+
+    console.log(typeof x);
+
 }
 
