@@ -70,5 +70,13 @@ function scopeFunction2() {
     var x3 = 3;
     console.log(x3);
 
+    console.log("------関数の巻き上げ------");
+
+    f4();
+
+    function f4() {
+        console.log('関数f4が呼び出された');
+    }
+
 
 }
