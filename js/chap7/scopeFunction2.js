@@ -64,4 +64,11 @@ function scopeFunction2() {
     console.log(f2());
     console.log(f2());
 
+    console.log("------var変数------");
+
+    console.log(x3);
+    var x3 = 3;
+    console.log(x3);
+
+
 }
