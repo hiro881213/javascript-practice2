@@ -22,5 +22,6 @@ $(document).ready(() => {
     // callFunction();
 
     // chap7
-    scopeFunction();
+    // scopeFunction();
+    scopeFunction2();
 });
