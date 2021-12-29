@@ -1,5 +1,5 @@
 function arrProcess() {
-    
+
     // 配列
     {
 
@@ -169,8 +169,6 @@ function arrProcess() {
         console.log(arr);
         console.log(arr2);
 
-
-
-
     }
+
 }

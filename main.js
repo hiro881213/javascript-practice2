@@ -26,6 +26,6 @@ $(document).ready(() => {
     // scopeFunction2();
 
     // chap8
-    arrProcess();
-
+    // arrProcess();
+    arrProcess2();
 });
