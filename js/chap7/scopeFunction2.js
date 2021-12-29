@@ -78,5 +78,28 @@ function scopeFunction2() {
         console.log('関数f4が呼び出された');
     }
 
+    console.log("------TDZ------");
+    {
+        if (typeof x === "undefined") {
+            console.log("xは存在していない");
+        } else {
+            console.log("xは存在している");
+        }
+
+        var x;
+
+    }
+
+    // エラーがある
+    // {
+    //     if (typeof x === "undefined") {
+    //         console.log("xは存在していない");
+    //     } else {
+    //         console.log("xは存在している");
+    //     }
+
+    //     let x;
+
+    // }
 
 }
