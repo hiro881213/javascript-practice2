@@ -116,4 +116,29 @@ function arrProcess() {
 
     }
 
+    {
+
+        console.log("------部分配列------")
+
+        let arr = [11, 12, 13, 14, 15];
+
+        // arr[3]から後ろ
+        let arr2 = arr.slice(3);
+        console.log(arr2);
+        console.log(arr);
+
+        // arr[2]〜arr[4]の一つ前まで
+        arr2 = arr.slice(2,4);
+        console.log(arr2);
+
+        // arr[1]から最後から二番目の一つ前まで
+        arr2 = arr.slice(1, -2);
+        console.log(arr2);
+
+        // 最後から二番目から最後から一番目の一つ前まで
+        arr2 = arr.slice(-2, -1);
+        console.log(arr2);
+
+    }
+
 }
