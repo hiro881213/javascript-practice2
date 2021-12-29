@@ -89,4 +89,31 @@ function arrProcess() {
         console.log(arr);
 
     }
+
+    {
+
+        console.log("------複数要素の追加------")
+
+        let arr = [1, 2, 3];
+        let arr2 = arr.concat(4, 5, 6);
+        
+        // 配列は変化しない
+        console.log(arr);
+        console.log(arr2);
+
+        // 配列を渡す
+        arr2 = arr.concat([4, 5, 6]);
+        console.log(arr2);
+
+        arr2 = arr.concat([4,5], 6)
+        console.log(arr2);
+
+        arr2 = arr.concat([4,5], [6, 7]);
+        console.log(arr2);
+
+        arr2 = arr.concat([4, [5, 6]]);
+        console.log(arr2);
+
+    }
+
 }
