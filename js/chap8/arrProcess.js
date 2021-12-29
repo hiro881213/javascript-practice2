@@ -68,4 +68,25 @@ function arrProcess() {
         console.log(arr8);
 
     }
+    {
+
+        console.log("------配列変更メソッド------")
+        
+        let arr = ["b", "c", "d"];
+
+        console.log(arr);
+
+        console.log(arr.push("e"));
+        console.log(arr);
+
+        console.log(arr.pop());
+        console.log(arr);
+
+        console.log(arr.unshift("a"));
+        console.log(arr);
+
+        console.log(arr.shift());
+        console.log(arr);
+
+    }
 }
