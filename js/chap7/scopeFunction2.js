@@ -1,5 +1,5 @@
 function scopeFunction2() {
-    
+
     console.log("------クロージャー------");
 
     // グローバル関数

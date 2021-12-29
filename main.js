@@ -23,5 +23,9 @@ $(document).ready(() => {
 
     // chap7
     // scopeFunction();
-    scopeFunction2();
+    // scopeFunction2();
+
+    // chap8
+    arrProcess();
+
 });
