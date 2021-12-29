@@ -141,4 +141,36 @@ function arrProcess() {
 
     }
 
+    {
+
+        console.log("------splice------")
+        let arr = [1, 5, 7];
+        
+        // arr[1]から2,3,4が追加される
+        // arr2は削除された要素
+        let arr2 = arr.splice(1, 0, 2, 3, 4);
+        console.log(arr);
+
+        // 何も追加したされていない
+        console.log(arr2);
+
+        // arr[5]に6が追加されて、以降一つずつ後ろへ
+        arr2 = arr.splice(5, 0, 6);
+        console.log(arr)
+        console.log(arr2)
+        
+        // arr[1]から2個削除
+        arr2 = arr.splice(1, 2);
+        console.log(arr);
+        console.log(arr2);
+
+        // arr[2]から1個削除して'a','b'を追加
+        arr2 = arr.splice(2,1,'a', 'b');
+        console.log(arr);
+        console.log(arr2);
+
+
+
+
+    }
 }
