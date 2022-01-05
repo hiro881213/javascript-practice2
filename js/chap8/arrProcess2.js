@@ -47,4 +47,22 @@ function arrProcess2() {
         console.log(arr.fill(0, -3, -1));
 
     }
+
+    {
+
+        console.log("------逆転ソート------");
+
+        let arr = [1, 2, 3, 4, 5];
+        let arr2 = arr.reverse();
+
+        console.log(arr);
+        console.log(arr2);
+
+        arr.reverse();
+
+
+        console.log(arr);
+        console.log(arr2);
+
+    }
 }
