@@ -53,4 +53,34 @@ function arrProcess3() {
         console.log(cart);
 
     }
+
+    {
+        console.log("------Filterメソッド------");
+
+        const cards = [];
+
+        for (let mark of ['hart', 'clover', 'dia', 'spade']) {
+        
+            for (let number = 1; number <= 13; number++) {
+        
+                cards.push({mark, number});
+        
+            }
+        
+        }
+
+        let selCard = cards.filter(card => card.number === 2);
+        console.log(selCard);
+
+        selCard = cards.filter(card => card.mark === 'dia');
+        console.log(selCard);
+
+        selCard = cards.filter(card => card.number > 10);
+        console.log(selCard);
+
+        selCard = cards.filter(card => card.number > 10 && card.mark == 'hart');
+        console.log(selCard);
+
+
+    }
 }
