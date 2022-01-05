@@ -43,4 +43,14 @@ function arrProcess3() {
 
     }
 
+    {
+        console.log("------mapと添字------");
+    
+        const items = ["iPhone", "Android"];
+        const prices= [54800, 49800];
+
+        const cart = items.map((x, i) => ({name: x, price: prices[i]}));
+        console.log(cart);
+
+    }
 }
