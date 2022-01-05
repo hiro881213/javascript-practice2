@@ -198,7 +198,7 @@ function arrProcess2() {
         const arr = [Jamie, Juliet, Peter, Jay];
         console.log(arr.find(p => p.id === Juliet.id));
         console.log(arr.find(p => p.id === this.id, Juliet));
-
+    
     }
 
 }
