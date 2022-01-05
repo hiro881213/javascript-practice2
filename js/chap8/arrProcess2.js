@@ -176,4 +176,29 @@ function arrProcess2() {
         
     }
 
+    {
+        console.log("------クラスとfindメソッド------")
+
+        class Person {
+            
+            constructor(name) {
+                this.name = name;
+                this.id = Person.nextId++;
+            }
+
+        }
+
+        Person.nextId = 0;
+
+        const Jamie = new Person("Jamie");
+        const Juliet = new Person("Juliet");
+        const Peter = new Person("Peter");
+        const Jay = new Person("Jay");
+
+        const arr = [Jamie, Juliet, Peter, Jay];
+        console.log(arr.find(p => p.id === Juliet.id));
+        console.log(arr.find(p => p.id === this.id, Juliet));
+
+    }
+
 }
