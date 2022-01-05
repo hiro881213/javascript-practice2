@@ -164,4 +164,16 @@ function arrProcess2() {
         console.log(arr.find(o => o.id === 2));
 
     }
+
+    {
+        console.log("------累乗処理------");
+
+        const arr = [1, 17, 16, 5, 4, 16, 10, 3, 49];
+
+        // 添字が2より大きくて、ルートをとった値が整数になる
+        console.log(arr.find((x, i) => i > 2 && Number.isInteger(Math.sqrt(x))));
+        console.log(arr.find((x, i) => i > 5 && Number.isInteger(Math.sqrt(x))));
+        
+    }
+
 }
