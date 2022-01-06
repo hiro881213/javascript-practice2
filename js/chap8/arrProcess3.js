@@ -86,7 +86,43 @@ function arrProcess3() {
     {
         console.log("------mapとfilter------");
 
+        function changeSynbol(card) {
+
+            // マーク
+            const mark = {
+                "heart" : "♡",
+                "clover": "☘",
+                "dia"   : "♢",
+                "spade" : "♤"
+            };
+
+            // 文字記号
+            const valAJQK = {
+                1 : 'A',
+                11: 'J',
+                12: 'Q',
+                13: 'K'
+            };
+
+            for (let i = 2; i <= 10; i++) valAJQK[i] = i;
+            return mark[card.mark] + valAJQK[card.num];
+
+        }
+
+        const cards = [];
         
+        for (let mark of ["heart", "clover", "dia", "spade"])
+            for (let num = 1; num <= 13; num++)
+                cards.push({mark, num});
+        
+        let selCard = cards.filter(card => card.num === 2).map(changeSynbol)
+        console.log(selCard);
+
+        selCard = cards.filter(card => card.mark === 'dia').map(changeSynbol);
+        console.log(selCard);
+
+        selCard = cards.filter(card => card.num > 10 && card.mark === 'heart');
+        console.log(selCard);
 
     }
 }
