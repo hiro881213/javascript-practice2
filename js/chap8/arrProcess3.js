@@ -81,6 +81,12 @@ function arrProcess3() {
         selCard = cards.filter(card => card.number > 10 && card.mark == 'hart');
         console.log(selCard);
 
+    }
+
+    {
+        console.log("------mapとfilter------");
+
+        
 
     }
 }
