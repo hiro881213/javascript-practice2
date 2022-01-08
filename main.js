@@ -29,6 +29,9 @@ $(document).ready(() => {
     // arrProcess();
     // arrProcess2();
     // arrProcess3();
-    arrProcess4();
+    // arrProcess4();
+
+    // chap9
+    objectOrient();
 
 });
