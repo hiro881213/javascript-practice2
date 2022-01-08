@@ -35,4 +35,16 @@ function arrProcess4() {
         console.log(result);
 
     }
+
+    {
+        console.log("------ ul/liタグとJoinメソッド ------");
+
+        const partner = ["キジ", "犬", "サル"];
+
+        const html = '<ul><li>' + partner.join('</li><li>') + '</li></ul>';
+        console.log(html);
+
+
+    }
+
 }
