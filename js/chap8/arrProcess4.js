@@ -37,6 +37,7 @@ function arrProcess4() {
     }
 
     {
+
         console.log("------ ul/liタグとJoinメソッド ------");
 
         const partner = ["キジ", "犬", "サル"];
@@ -44,6 +45,20 @@ function arrProcess4() {
         const html = '<ul><li>' + partner.join('</li><li>') + '</li></ul>';
         console.log(html);
 
+
+    }
+
+    {
+
+        console.log("------joinメソッド2------");
+
+        const words = [
+            "Beachball", "Rodeo", "Angel", "Aardvark", "Xylophone", "November",
+            "Chocolate", "Papaya", "Uniform", "Joker", "Clover", "Bail"
+        ];
+
+        const longWords = words.join(' ');
+        console.log(longWords);
 
     }
 
