@@ -140,6 +140,7 @@ function arrProcess3() {
     }
 
     {
+
         console.log("------reduceメソッド2------");
 
         // 配列を生成する
@@ -150,6 +151,30 @@ function arrProcess3() {
 
         const sum2 = arr.reduce((a, x) => a + x);
         console.log(sum2);
+
+    }
+
+    {
+
+        console.log("------文字列のreduceメソッド------");
+
+        // 文字列配列を生成する
+        const words = [
+            "Beachball", "Rodeo", "Angel", "Aardvark", "Xylophone",
+            "November", "Chocolate", "Papaya", "Uniform", "Joker",
+            "Clover", "Bali"
+        ];
+
+        const alphabetical = words.reduce((a, x) => {
+
+            if (!a[x[0]]) a[x[0]] = [];
+            a[x[0]].push(x);
+
+            return a;
+
+        }, {} );
+
+        console.log(alphabetical);
 
     }
 
