@@ -1,5 +1,5 @@
 function arrProcess3() {
-    
+
     {
         console.log("------someメソッド------");
 

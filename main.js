@@ -28,6 +28,7 @@ $(document).ready(() => {
     // chap8
     // arrProcess();
     // arrProcess2();
-    arrProcess3();
+    // arrProcess3();
+    arrProcess4();
 
 });
