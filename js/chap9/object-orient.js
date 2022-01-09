@@ -34,4 +34,23 @@ function objectOrient () {
         console.log(o3[SYM]);
 
     }
+
+    {
+
+        console.log("------Object.keys------")
+
+        const SYM = Symbol();
+        
+        const o = {a: 1, b: 2, c: 3, [SYM]: 4};
+
+        const propArray = Object.keys(o);
+        
+        console.log(propArray);
+
+        console.log("----");
+
+        propArray.forEach(prop => console.log(`${prop}: ${o[prop]}`));
+
+    }
+
 }
