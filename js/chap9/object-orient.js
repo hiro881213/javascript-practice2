@@ -150,7 +150,6 @@ function objectOrient () {
                 // 選択ギア
                 this._userGear = this._userGears[0];
 
-
             }
 
             get userGear() { return this._userGear; }
@@ -180,7 +179,74 @@ function objectOrient () {
         console.log(car1.userGear);
         console.log(car2.userGear);
 
-        car1.userGear = "X";
+        // car1.userGear = "X";
+
+    }
+
+    {
+
+        console.log("------即時関数とインスタンス------");
+
+        const Car = (function() {
+
+            const carProps = new WeakMap();
+
+            class Car {
+
+                constructor(make, model) {
+
+                    // メーカー
+                    this.make = make;
+
+                    // モデル
+                    this.model = model;
+
+                    // ギア
+                    this._userGears = ['P', 'N', 'R', 'D'];
+
+                    carProps.set(this, {userGear: this._userGears[0] });
+
+                }
+
+                // ギア取得
+                get userGear() { return carProps.get(this).userGear; }
+
+                // ギア設定
+                set userGear(value) {
+
+                    if (this._userGears.indexOf(value) < 0)
+                        throw new Error(`ギア指定が正しくない: ${value}`);
+
+                    carProps.get(this).userGear = value;
+
+                }
+
+                shift(gear) { this.userGear = gear; }
+
+            }
+
+            return Car;
+
+        })();
+
+        const car1 = new Car("Tesla", "Model S");
+        const car2 = new Car("Mazda", "3i");
+
+        console.log(car1);
+        console.log(car2);
+
+        car1.shift('D');
+        car2.shift('R');
+
+        console.log(car1.userGear);
+        console.log(car2.userGear);
+
+
+        // ギアを設定する
+        car1.userGear = "N";
+        console.log(car1.userGear);
+
+        // car1.userGear = "X";
 
     }
 
