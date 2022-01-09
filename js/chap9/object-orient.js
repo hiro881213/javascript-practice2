@@ -1,4 +1,5 @@
 function objectOrient () {
+
     {
 
         console.log("------for...in------");
@@ -13,6 +14,14 @@ function objectOrient () {
             console.log(`${prop} : ${o[prop]}`);
 
         }
+
+        console.log("----");
+
+        const o2 = {a: 1, b: 2, c: 3, SYM: 4};
+
+        console.log(o2.SYM);
+        console.log(o2["SYM"]);
+        console.log(o2[SYM]);
 
     }
 }
