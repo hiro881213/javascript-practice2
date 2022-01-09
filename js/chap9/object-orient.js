@@ -21,7 +21,17 @@ function objectOrient () {
 
         console.log(o2.SYM);
         console.log(o2["SYM"]);
-        console.log(o2[SYM]);
+        console.log(o2[SYM]);   // 値が取得できない
+
+        console.log("----");
+
+        const o3 = {a: 1, b: 2, c: 3};
+        
+        o3[SYM] = 4;
+
+        console.log(o3.SYM);    // 値が取得できない
+        console.log(o3["SYM"]); // 値が取得できない
+        console.log(o3[SYM]);
 
     }
 }
