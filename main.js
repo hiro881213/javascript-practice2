@@ -32,6 +32,7 @@ $(document).ready(() => {
     // arrProcess4();
 
     // chap9
-    objectOrient();
+    // objectOrient();
+    objectOrient2();
 
 });
