@@ -168,4 +168,57 @@ function objectOrient2() {
 
     }
 
+    {
+        console.log("------継承------");
+
+        class Vehicle {
+
+            constructor() {
+
+                this.passengers = [];
+                console.log("Vehicleが生成された");
+
+            }
+
+            addPassenger(p) {
+
+                this.passengers.push(p);
+
+            }
+
+        }
+
+        class Car extends Vehicle {
+
+            constructor() {
+
+                // スーパークラスのコンストラクタを呼び出す
+                super();
+                console.log("Carが生成された");
+
+            }
+
+            deployAirbags() {
+
+                console.log("バーン!");
+
+            }
+
+        }
+
+        const v = new Car();
+        v.addPassenger("Wanwan");
+        v.addPassenger("Wanko");
+        
+        console.log(v.passengers);
+
+        const c = new Car();
+        c.addPassenger("A");
+        c.addPassenger("B");
+        console.log(c.passengers);
+
+        c.deployAirbags();
+
+    }
+
 }
