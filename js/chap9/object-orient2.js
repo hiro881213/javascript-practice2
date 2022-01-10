@@ -219,6 +219,17 @@ function objectOrient2() {
 
         c.deployAirbags();
 
+        class MotorCycle extends Vehicle {}
+
+        const m = new MotorCycle();
+
+        console.log(c instanceof Car);
+        console.log(c instanceof Vehicle);
+
+        console.log(m instanceof Car);
+        console.log(m instanceof MotorCycle);
+        console.log(m instanceof Vehicle);
+
     }
 
 }
