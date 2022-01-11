@@ -231,5 +231,7 @@ function objectOrient2() {
         console.log(m instanceof Vehicle);
 
     }
-
+    {
+        
+    }
 }
