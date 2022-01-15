@@ -303,6 +303,40 @@ function objectOrient2() {
         console.log(m instanceof MotorCycle);
         console.log(m instanceof Vehicle);
 
+        console.log("------文字列による表現------");
+
+        class Car2 extends Vehicle {
+            
+            static getNextVin() {
+
+                return Car2.nextVin++;
+
+            }
+
+            // コンストラクタ
+            constructor(make, model) {
+
+                super();
+                this.make = make;
+                this.model = model;
+                this.vin = Car2.getNextVin();
+
+            }
+
+            toString() {
+                return `${this.make} ${this.model} : ${this.vin}`;
+            }
+
+        }
+
+        Car2.nextVin = 0;
+
+        const c3 = new Car2('Tesla', 'T1');
+        const c4 = new Car2('Tesla', 'T1');
+
+        console.log(c3.toString());
+        console.log(c4.toString());
+
     }
 
     {
