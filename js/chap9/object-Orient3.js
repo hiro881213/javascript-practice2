@@ -25,5 +25,15 @@ function objectOrient3() {
 
         }
 
+        console.log("------多重継承とミックスイン呼び出し------");
+
+        const car1 = new Car();
+        
+        makeInsurable(car1);
+        console.log(car1.isInsured());
+
+        car1.addInsurancePolicy(new InsurancePolicy());
+        console.log(car1.isInsured());
+
     }
 }
