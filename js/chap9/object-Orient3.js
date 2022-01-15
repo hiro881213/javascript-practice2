@@ -35,5 +35,16 @@ function objectOrient3() {
         car1.addInsurancePolicy(new InsurancePolicy());
         console.log(car1.isInsured());
 
+        console.log("------多重継承とミックスイン呼び出し2------");
+
+        const car2 = new Car();
+
+        makeInsurable(car2);
+        console.log(car2.isInsured());
+
+        car2.addInsurancePolicy(new InsurancePolicy());
+        console.log(car2.isInsured());
+
+
     }
 }
