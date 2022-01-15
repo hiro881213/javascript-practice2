@@ -1,5 +1,5 @@
 function objectOrient2() {
-    
+
     {
 
         console.log("------クラスと関数------")

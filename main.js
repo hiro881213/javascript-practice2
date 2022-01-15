@@ -33,6 +33,6 @@ $(document).ready(() => {
 
     // chap9
     // objectOrient();
-    objectOrient2();
-
+    // objectOrient2();
+    objectOrient3();
 });
