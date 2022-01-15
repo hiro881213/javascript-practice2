@@ -305,4 +305,47 @@ function objectOrient2() {
 
     }
 
+    {
+        console.log("------プロパティの列挙------");
+
+        // スーパークラスの定義
+        class Super {
+
+            // コンストラクタ
+            constructor() {
+
+                this.name = 'Super';
+                this.isSuper = true;
+            
+            }
+
+        }
+
+        Super.prototype.sneaky = '非推奨!';
+
+        // サブクラスの定義
+        class Sub extends Super {
+
+            constructor() {
+
+                // スーパークラスのコンストラクタを呼び出す
+                super();
+
+                this.name = 'Sub';
+                this.isSub = true;
+
+            }
+
+        }
+
+        const obj = new Sub();
+
+        for (let p in obj) {
+
+            console.log(`${p}: ${obj[p]}` + (obj.hasOwnProperty(p) ? '' : '(継承)'));
+
+        }
+
+    }
+
 }
