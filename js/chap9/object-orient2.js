@@ -289,6 +289,8 @@ function objectOrient2() {
 
         c.deployAirbags();
 
+        console.log("------ポリモーフィズム------");
+
         class MotorCycle extends Vehicle {}
 
         const c2 = new Car();
