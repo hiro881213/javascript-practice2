@@ -45,6 +45,48 @@ function objectOrient3() {
         car2.addInsurancePolicy(new InsurancePolicy());
         console.log(car2.isInsured());
 
+    }
+
+    {
+
+        console.log("------多重継承とミックスイン生成2------");
+
+        class Car {
+            constructor(){}
+        }
+
+        class InsurancePolicy {}
+
+        function makeInsurable(o) {
+
+            o.addInsurancePolicy = (p) => {
+                this.insurancePolicy = p;
+            }
+
+            o.getInsurancePolicy = () => {
+                return this.insurancePolicy;
+            }
+
+            o.isInsured = () => {
+                return !!this.insurancePolicy;
+            }
+
+        }
+
+        makeInsurable(Car.prototype);
+
+        const car1 = new Car();
+        console.log(car1.isInsured());
+
+        car1.addInsurancePolicy(new InsurancePolicy());
+        console.log(car1.isInsured());
+
+        const car2 = new Car();
+        console.log(car2.isInsured());
+
+        car2.addInsurancePolicy(new InsurancePolicy());
+        console.log(car2.isInsured())
 
     }
+
 }
