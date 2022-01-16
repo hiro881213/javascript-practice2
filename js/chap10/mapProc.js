@@ -64,6 +64,11 @@ function mapProc() {
         console.log(userRoles.size);
         console.log([...userRoles.values()]);
 
+        console.log("------マップのクリア------");
+        userRoles.clear();
+        console.log(userRoles.size);
+        console.log([...userRoles.values()]);
+
     }
 
 }
