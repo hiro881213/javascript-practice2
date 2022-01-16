@@ -34,6 +34,10 @@ function mapProc() {
         console.log("------マップのサイズ取得------");
         console.log(userRoles.size);
 
+        console.log("------マップのキー取得------");
+        for (let u of userRoles.keys())
+            console.log(u.name);
+
     }
 
 }
