@@ -58,6 +58,12 @@ function mapProc() {
         console.log(userRoles.values());
         console.log([...userRoles.values()]);
 
+        console.log("------マップの要素削除------");
+        userRoles.delete(u2);
+        
+        console.log(userRoles.size);
+        console.log([...userRoles.values()]);
+
     }
 
 }
