@@ -38,6 +38,11 @@ function mapProc() {
         for (let u of userRoles.keys())
             console.log(u.name);
 
+        console.log("------マップのバリュー取得------");
+        for(let r of userRoles.values())
+            console.log(r);
+
+
     }
 
 }
