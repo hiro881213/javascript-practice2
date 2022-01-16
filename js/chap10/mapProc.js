@@ -129,7 +129,30 @@ function mapProc() {
         console.log(roles.delete("管理者"));
         console.log(roles);
         console.log(roles.delete("管理者"));
-        
+
+    }
+
+    {
+
+        console.log("------ウィークセット------");
+
+        const naughty = new WeakSet();
+
+        const children = [
+            {name: "A"},
+            {name: "B"},
+        ];
+
+        naughty.add(children[1]);
+
+        for ( let child of children ) {
+
+            if (naughty.has(child))
+                console.log(`${child.name}がある`);
+            else
+                console.log(`${child.name}がいない`);
+
+        }
 
     }
 
