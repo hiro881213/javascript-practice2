@@ -31,6 +31,9 @@ function mapProc() {
         userRoles.set(u1, '管理者');
         console.log(userRoles.get(u1));
 
+        console.log("------マップのサイズ取得------");
+        console.log(userRoles.size);
+
     }
 
 }
