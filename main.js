@@ -34,5 +34,9 @@ $(document).ready(() => {
     // chap9
     // objectOrient();
     // objectOrient2();
-    objectOrient3();
+    // objectOrient3();
+
+    // chap10
+    mapProc();
+
 });
