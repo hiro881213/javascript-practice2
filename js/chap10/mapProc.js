@@ -118,6 +118,9 @@ function mapProc() {
         roles.add("ユーザ");
         console.log(roles);
 
+        roles.add("管理者");
+        console.log(roles);
+
     }
 
 }
