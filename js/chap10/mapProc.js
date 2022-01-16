@@ -109,4 +109,12 @@ function mapProc() {
 
     }
 
+    {
+        console.log("------セット------");
+
+        // Setを定義する
+        const roles = new Set();
+
+    }
+
 }
