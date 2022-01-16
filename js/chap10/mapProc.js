@@ -121,6 +121,8 @@ function mapProc() {
         roles.add("管理者");
         console.log(roles);
 
+        console.log(roles.size);
+
     }
 
 }
