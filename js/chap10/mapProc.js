@@ -24,6 +24,13 @@ function mapProc() {
         console.log(userRoles.get(u1));
         console.log(userRoles.has(u4));
         console.log(userRoles.get(u4));
+
+        console.log("------マップのセット------");
+
+        console.log(userRoles.get(u1));
+        userRoles.set(u1, '管理者');
+        console.log(userRoles.get(u1));
+
     }
 
 }
