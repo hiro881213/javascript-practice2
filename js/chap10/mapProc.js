@@ -49,6 +49,11 @@ function mapProc() {
         console.log("------マップの内容取得(デストラクチャリング)------");
         for(let [u, r] of userRoles.entries())
             console.log(`${u.name}: ${r}`);
+
+        console.log("------マップの内容取得(デストラクチャリング省略)------");
+        for(let [u, r] of userRoles)
+            console.log(`${u.name}: ${r}`);
+
     }
 
 }
