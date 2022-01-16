@@ -54,6 +54,10 @@ function mapProc() {
         for(let [u, r] of userRoles)
             console.log(`${u.name}: ${r}`);
 
+        console.log("------マップと分割代入------");
+        console.log(userRoles.values());
+        console.log([...userRoles.values()]);
+
     }
 
 }
