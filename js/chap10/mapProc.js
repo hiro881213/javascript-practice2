@@ -76,7 +76,7 @@ function mapProc() {
     {
         console.log("------ウィークマップ------");
 
-        const secretHolder = (() => {
+        const SecretHolder = (() => {
             
             const secrets = new WeakMap();
 
@@ -96,7 +96,16 @@ function mapProc() {
 
             }
 
-        });
+        })();
+
+        const a = new SecretHolder();
+        const b = new SecretHolder();
+
+        a.setSecret('秘密A');
+        b.setSecret('秘密B');
+
+        console.log(a.getSecret());
+        console.log(b.getSecret());
 
     }
 
