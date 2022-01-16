@@ -42,6 +42,9 @@ function mapProc() {
         for(let r of userRoles.values())
             console.log(r);
 
+        console.log("------マップの内容取得------");
+        for (let ur of userRoles.entries())
+            console.log(`${ur[0].name}: ${ur[1]}`);
 
     }
 
