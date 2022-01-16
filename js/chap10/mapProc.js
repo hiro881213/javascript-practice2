@@ -18,6 +18,12 @@ function mapProc() {
 
         console.log(userRoles.get(u2));
 
+        console.log("------マップの取得------");
+
+        console.log(userRoles.has(u1));
+        console.log(userRoles.get(u1));
+        console.log(userRoles.has(u4));
+        console.log(userRoles.get(u4));
     }
 
 }
