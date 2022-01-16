@@ -115,6 +115,9 @@ function mapProc() {
         // Setを定義する
         const roles = new Set();
 
+        roles.add("ユーザ");
+        console.log(roles);
+
     }
 
 }
