@@ -46,6 +46,9 @@ function mapProc() {
         for (let ur of userRoles.entries())
             console.log(`${ur[0].name}: ${ur[1]}`);
 
+        console.log("------マップの内容取得(デストラクチャリング)------");
+        for(let [u, r] of userRoles.entries())
+            console.log(`${u.name}: ${r}`);
     }
 
 }
