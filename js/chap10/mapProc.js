@@ -123,6 +123,9 @@ function mapProc() {
 
         console.log(roles.size);
 
+        roles.add("ユーザ");
+        console.log(roles);
+
     }
 
 }
