@@ -65,9 +65,38 @@ function mapProc() {
         console.log([...userRoles.values()]);
 
         console.log("------マップのクリア------");
+        
         userRoles.clear();
+        
         console.log(userRoles.size);
         console.log([...userRoles.values()]);
+
+    }
+
+    {
+        console.log("------ウィークマップ------");
+
+        const secretHolder = (() => {
+            
+            const secrets = new WeakMap();
+
+            return class {
+
+                // シークレットのセット
+                setSecret(secret) {
+                    
+                    secrets.set(this, secret);
+
+                }
+
+                // シークレットの取得
+                getSecret() {
+                    return secrets.get(this);
+                }
+
+            }
+
+        });
 
     }
 
