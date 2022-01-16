@@ -126,6 +126,11 @@ function mapProc() {
         roles.add("ユーザ");
         console.log(roles);
 
+        console.log(roles.delete("管理者"));
+        console.log(roles);
+        console.log(roles.delete("管理者"));
+        
+
     }
 
 }
