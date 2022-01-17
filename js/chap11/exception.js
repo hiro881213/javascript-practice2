@@ -1,0 +1,3 @@
+function procException() {
+    alert();
+}

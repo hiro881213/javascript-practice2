@@ -39,4 +39,7 @@ $(document).ready(() => {
     // chap10
     mapProc();
 
+    // chap11
+    procException();
+
 });
