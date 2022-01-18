@@ -3,7 +3,8 @@ function procException() {
 
         console.log('Errorオブジェクト');
 
-        const email = "test@test.com";
+        // const email = "test@test.com";
+        const email = "testtest.com";
 
         const validateEmail = ValidateEmail(email);
 
