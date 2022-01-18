@@ -132,5 +132,7 @@ function procException() {
         }
 
     }
-
+    {
+        console.log("------try~catch~finally------");
+    }
 }
