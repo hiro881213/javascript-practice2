@@ -36,8 +36,8 @@ $(document).ready(() => {
     // objectOrient2();
     // objectOrient3();
 
-    // chap10
-    mapProc();
+    // // chap10
+    // mapProc();
 
     // chap11
     procException();
