@@ -77,11 +77,12 @@ function procIterator() {
     {
         console.log("------LogクラスとsetTimeout------");
 
+        // Logクラス
         class Log {
             
             // コンストラクタ
             constructor() {
-                this.message = [];
+                this.messages = [];
             }
 
             // 追加処理
@@ -99,6 +100,37 @@ function procIterator() {
             }
 
         }
+
+        const log = new Log();
+
+        log.add("TEST1");
+
+        setTimeout(() =>{
+            log.add("TESTB"),
+            3*1000 /* 3s後 */
+        });
+
+        setTimeout(() =>{
+            log.add("TESTC"),
+            7*1000 /* 7s後 */
+        });
+
+        setTimeout(() =>{
+            log.add("TESTD"),
+            9*1000 /* 9s後 */
+        });
+
+        setTimeout(() => {
+            
+            console.log(`本日の業務報告-(${new Date()})`);
+
+            for (let entry of log) {
+
+                const date = new Date(entry.timestamp);
+                console.log(`${entry.message} (${date})`);
+            }
+
+        }, 10*1000);
 
     }
 }
