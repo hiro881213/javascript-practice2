@@ -17,6 +17,21 @@ function procIterator() {
             console.log(aPage);
         }
 
+        console.log("------イテレータの利用------");
+
+        const it = book.values();
+        
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+
     }
 
 }
