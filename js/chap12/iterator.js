@@ -45,6 +45,19 @@ function procIterator() {
         console.log(it2.next());
         console.log(it2.next());
 
+        console.log("------doneとイテレータの利用------");
+
+        const it3 = book.values();
+
+        let current = it3.next();
+    
+        while(!current.done) {
+    
+            console.log(current.value);
+            current = it3.next();
+    
+        }
+    
     }
 
 }
