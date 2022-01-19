@@ -74,4 +74,31 @@ function procIterator() {
 
     }
 
+    {
+        console.log("------LogクラスとsetTimeout------");
+
+        class Log {
+            
+            // コンストラクタ
+            constructor() {
+                this.message = [];
+            }
+
+            // 追加処理
+            add(message) {
+
+                const now = Date.now();
+                console.log(`ログ追加: ${message} (${now})`);
+                this.messages.push({message, timestamp: now});
+
+            }
+
+            // イテレータ
+            [Symbol.iterator]() {
+                return this.messages.values();
+            }
+
+        }
+
+    }
 }
