@@ -57,7 +57,21 @@ function procIterator() {
             current = it3.next();
     
         }
-    
+
+        console.log("------複数のイテレータの利用------");
+
+        const it4 = book.values();
+        const it5 = book.values();
+
+        console.log(it4.next());
+        console.log(it4.next());
+
+        console.log(it5.next());
+
+        console.log(it4.next());
+
+        console.log(it5.next());
+
     }
 
 }
