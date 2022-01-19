@@ -32,6 +32,19 @@ function procIterator() {
         console.log(it.next());
         console.log(it.next());
 
+        console.log("------シンボルとイテレータの利用------");
+
+        const it2 = book[Symbol.iterator]();
+
+        console.log(it2.next());
+        console.log(it2.next());
+        console.log(it2.next());
+        console.log(it2.next());
+        console.log(it2.next());
+        console.log(it2.next());
+        console.log(it2.next());
+        console.log(it2.next());
+
     }
 
 }
