@@ -229,6 +229,16 @@ function procIterator() {
 
         }
 
+        const fib = new FibonacciSequenece();
+
+        let i = 0;
+
+        for (let n of fib) {
+
+            console.log(`${i + 1}: ${n}`);
+            if (++i > 99) break;
+
+        }
 
     }
 
