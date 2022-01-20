@@ -42,7 +42,8 @@ $(document).ready(() => {
     // // chap11
     // procException();
 
-    // chap12
-    procIterator();
+    // // chap12
+    // procIterator();
+    procGenerator();
 
 });

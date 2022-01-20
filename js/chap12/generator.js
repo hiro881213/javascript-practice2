@@ -1,0 +1,3 @@
+function procGenerator() {
+    alert();
+}
