@@ -202,4 +202,34 @@ function procIterator() {
 
     }
 
+    {
+        console.log("------フィボナッチ数列------");
+    
+        class FibonacciSequenece {
+
+            [Symbol.iterator]() {
+
+                let a = 0, b = 1;
+
+                return {
+
+                    next() {
+
+                        let rval = { value: b, done:false };
+                        b += a;
+                        a = rval.value;
+
+                        return rval;
+
+                    }
+
+                };
+
+            }
+
+        }
+
+
+    }
+
 }
