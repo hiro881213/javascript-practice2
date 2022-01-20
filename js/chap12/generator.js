@@ -26,6 +26,12 @@ function procGenerator() {
         console.log(it.next());
         console.log(it.next());
 
+        console.log("------")
+
+        for (let color of rainbow()) {
+            console.log(color);
+        }
+
     }
 
 }
