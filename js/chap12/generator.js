@@ -12,6 +12,19 @@ function procGenerator() {
             yield '紫';
         }
 
+        const it = rainbow();
+
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
 
     }
 
