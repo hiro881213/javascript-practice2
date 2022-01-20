@@ -133,4 +133,46 @@ function procIterator() {
         }, 10*1000);
 
     }
+
+    {
+
+        console.log("------LogクラスとsetTimeout2------");
+
+
+        class Log {
+
+            // コンストラクタ
+            constructor() {
+                this.messages = [];
+            }
+
+            add(message) {
+
+                const now = Date.now();
+                
+                console.log(`ログ追加${message} (${now})`);
+                
+                this.messages.push({message, timestamp: now});
+            
+            }
+
+            [Symbol.iterator]() {
+
+                let i = 0;
+                const messages = this.messages;
+
+                return {
+                    next : () => i >= messages.length ?
+                        {value:undefined, done:true} :
+                        {value: messages[i++], done: false}
+                }
+
+            }
+
+        }
+
+
+        
+    }
+
 }
