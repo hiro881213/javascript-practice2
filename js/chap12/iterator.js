@@ -171,8 +171,35 @@ function procIterator() {
 
         }
 
-
+        const log = new Log();
         
+        log.add("業務開始");
+
+        setTimeout(() => {
+            log.add("鯨を見た");
+        }, 3*1000);
+
+        setTimeout(() => {
+            log.add("一隻の船をみた");
+        }, 7*1000);
+
+        setTimeout(() => {
+            log.add("監視終了");
+        }, 9*1000);
+
+        setTimeout(() => {
+            
+            console.log(`本日の業務報告- (${new Date()})`);
+
+            for(let entry of log) {
+
+                const date = new Date(entry.timestamp);
+                console.log(`${entry.message}(${date})`);
+
+            }
+
+        }, 10 * 1000);
+
     }
 
 }
