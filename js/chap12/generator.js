@@ -75,6 +75,12 @@ function procGenerator() {
         console.log(it.next());
         console.log(it.next());
 
+        console.log("for of");
+
+        for (let l of abc()) {
+            console.log(l);
+        }
+
     }
 
 }
