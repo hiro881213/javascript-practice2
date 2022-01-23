@@ -54,7 +54,27 @@ function procGenerator() {
         console.log(it.next("ワンワン"));
         console.log(it.next("青"));
 
-        
+    }
+
+    {
+
+        console.log("------ジェネレータとreturn------");
+
+        function* abc() {
+
+            yield 'a';
+            yield 'b';
+
+            return 'c';
+
+        }
+
+        const it = abc();
+
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+
     }
 
 }
