@@ -34,4 +34,27 @@ function procGenerator() {
 
     }
 
+    {
+
+        console.log("------yield式と双方向コミュニケション------");
+
+        function* interrogate() {
+
+            const name = yield "お名前は？";
+            const color = yield "お好きな色は何ですか？";
+
+            return `${name}さんの好きな色は${color}です`;
+
+        }
+
+        const it = interrogate();
+
+        console.log(it.next());
+
+        console.log(it.next("ワンワン"));
+        console.log(it.next("青"));
+
+        
+    }
+
 }
