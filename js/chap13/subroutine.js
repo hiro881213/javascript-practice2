@@ -131,4 +131,34 @@ function procSubroutine() {
 
     }
 
+    {
+
+        console.log("------純粋関数3------");
+
+        // インターバル関数
+        setInterval(() => {
+            
+            document.querySelector('.rainbow').style['background-color'] = getNextRainbowColor();
+
+        },500);
+
+        const getNextRainbowColor = (() => {
+            
+            const colors = [
+                'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'biolet'
+            ];
+
+            let colorIndex = -1;
+
+            return () => {
+                
+                if (++colorIndex >= colors.length) colorIndex = 0;
+                return colors[colorIndex];
+
+            };
+
+        })();
+
+    }
+
 }
