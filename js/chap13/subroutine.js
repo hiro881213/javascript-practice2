@@ -52,7 +52,7 @@ function procSubroutine() {
 
     {
 
-        console.log("------純粋関数------");
+        console.log("------純粋関数を満たさない例------");
 
         const colors = [
             '赤','橙','黄','緑','青','水色','紫'
@@ -78,6 +78,21 @@ function procSubroutine() {
         console.log(getNextRainbowColor());
         console.log(getNextRainbowColor());
         console.log(getNextRainbowColor());
+
+    }
+
+    {
+
+        console.log("------純粋関数------");
+
+        function isLeapYear(year) {
+            if (year % 4 !== 0 ) return false;
+            else if (year % 100 != 0) return true;
+            else if (year % 400 != 0) return false;
+            else return true;
+        }
+
+        console.log(isLeapYear(new Date().getFullYear()));
 
     }
 
