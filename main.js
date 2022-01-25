@@ -47,6 +47,7 @@ $(document).ready(() => {
     // procGenerator();
 
     // chap13
-    procSubroutine();
+    // procSubroutine();
+    procFunc();
 
 });
