@@ -15,11 +15,25 @@ function procFunc() {
     }
 
     {
+
         console.log("------IIFEと非同期のコード------");
 
         setTimeout(() => {
             console.log("hello");
         }, 1500);
+
+        console.log("------IIFEと非同期のコード(カウント)------");
+
+        var i;
+
+        for ( i = 5; i >= 0; i-- ) {
+
+            setTimeout(() => {
+                console.log(i === 0 ? "go!" : i);
+            }, (5 - i) * 1000);
+
+        }
+
     }
 
 }
