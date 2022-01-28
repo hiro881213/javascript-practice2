@@ -36,4 +36,27 @@ function procFunc() {
 
     }
 
+    {
+
+        console.log("------IIFEと非同期のコード(カウント)2------");
+
+        function loopBody(i) {
+
+            setTimeout(() => {
+
+                console.log(i === 0 ? "go!" : i);
+
+            }, (5 - i) * 1000);
+
+        }
+
+        var i;
+
+        for ( i = 5; i >= 0; i-- ) {
+
+            loopBody(i);
+
+        }
+
+    }
 }
