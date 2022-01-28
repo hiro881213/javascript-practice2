@@ -82,4 +82,19 @@ function procFunc() {
 
     }
 
+    {
+
+        console.log("------IIFEと非同期のコード[カウント]4------");
+
+        for ( let i = 5; i >= 0; i-- ) {
+
+            setTimeout(() => {
+
+                console.log(i === 0 ? "go!": i);
+
+            }, (5 - i) * 1000);
+
+        }
+
+    }
 }
