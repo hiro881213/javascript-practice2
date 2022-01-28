@@ -14,4 +14,12 @@ function procFunc() {
 
     }
 
+    {
+        console.log("------IIFEと非同期のコード------");
+
+        setTimeout(() => {
+            console.log("hello");
+        }, 1500);
+    }
+
 }
