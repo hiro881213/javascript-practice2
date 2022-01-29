@@ -97,7 +97,7 @@ function pipeProc() {
     {
 
         console.log("------再帰------");
-        
+
         function findNeedle(haystack) {
 
             if ( haystack.length === 0 ) return "藁山はなくなった";
@@ -111,6 +111,22 @@ function pipeProc() {
 
         console.log(findNeedle(['藁','藁','藁','藁','藁','藁','針','藁']));
 
+    }
+
+    {
+
+        console.log("------再帰2------");
+
+        function fact(n) {
+
+            if (n === 1) return 1;
+            return n * fact(n - 1);
+
+        }
+
+        console.log(fact(4));
+        console.log(fact(5));
+        console.log(fact(8));
     }
 
 }
