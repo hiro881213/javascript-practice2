@@ -49,6 +49,9 @@ $(document).ready(() => {
     // chap13
     // procSubroutine();
     // procFunc();
-    pipeProc();
+    // pipeProc();
+
+    // chap14
+    asyncProc();
 
 });
