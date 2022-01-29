@@ -20,7 +20,7 @@ function asyncProc() {
 
     {
 
-        console.log("------コールバック(無名関数)------");
+        console.log("------コールバック[無名関数]------");
 
         setTimeout(
             function() {
@@ -32,4 +32,15 @@ function asyncProc() {
         console.log("setTimeoutの後");
 
     }
+
+    {
+
+        console.log("------コールバック[アロー関数]------");
+
+        console.log("setTimeoutの前:" + new Date());
+        
+        setTimeout(() => console.log("アロー関数の中:" + new Date()), 10 * 100);
+
+    }
+
 }
