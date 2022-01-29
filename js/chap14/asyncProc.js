@@ -16,6 +16,20 @@ function asyncProc() {
         console.log("setTimeoutの後");
         console.log("これもsetTimeoutの後");
 
+    }
+
+    {
+
+        console.log("------コールバック(無名関数)------");
+
+        setTimeout(
+            function() {
+                console.log("setTimeoutに指定された無名関数の中:" + new Date());
+            },
+            10 * 100
+        );
+
+        console.log("setTimeoutの後");
 
     }
 }
