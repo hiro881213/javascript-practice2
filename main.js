@@ -48,6 +48,7 @@ $(document).ready(() => {
 
     // chap13
     // procSubroutine();
-    procFunc();
+    // procFunc();
+    pipeProc();
 
 });
