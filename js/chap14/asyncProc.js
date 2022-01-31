@@ -85,5 +85,24 @@ function asyncProc() {
         countdown();
 
     }
+    {
 
+        console.log("------スコープと非同期の実行2------");
+
+        function countdown() {
+
+            console.log("カウントダウン");
+
+            for (let i = 5; i >= 0; i--) {
+                setTimeout(() => {
+                    console.log(i === 0 ? "GO" :i);
+
+                }, (5 - i)* 1000);
+            }
+
+        }
+
+        countdown();
+
+    }
 }
