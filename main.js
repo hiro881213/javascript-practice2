@@ -52,6 +52,6 @@ $(document).ready(() => {
     // pipeProc();
 
     // chap14
-    asyncProc();
-
+    // asyncProc();
+    promiseFunc();
 });
