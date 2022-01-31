@@ -43,4 +43,25 @@ function asyncProc() {
 
     }
 
+    {
+
+        console.log("------setIntervalとclearInterval------");
+
+        const start = new Date()
+        
+        let i = 0;
+
+        const intervalId = setInterval(() => {
+
+            // 現在の時刻
+            let now = new Date();
+
+            if (now.getMinutes() !== start.getMinutes() || ++i > 10)
+                return clearInterval(intervalId);
+
+            console.log(`${i}: ${now}`);
+        }, 5*1000);
+        
+    }
+
 }
