@@ -54,5 +54,16 @@ function promiseFunc() {
             (err) => console.log(`カウントダウンでエラーが起こった: ${err.message}`)
         )
 
+        console.log('------catchハンドラ------');
+
+        const p = countdown(10);
+
+        p.then(
+            ()=> console.log('カウントダウン成功')
+        );
+        
+        p.catch((err) => console.log(`カウントダウンでエラーが起こった: ${err.message}`));
+
     }
+
 }
