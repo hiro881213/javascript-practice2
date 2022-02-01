@@ -53,5 +53,7 @@ $(document).ready(() => {
 
     // chap14
     // asyncProc();
-    promiseFunc();
+    // promiseFunc();
+    promiseFunc2();
+
 });
