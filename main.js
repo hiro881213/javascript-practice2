@@ -56,5 +56,5 @@ $(document).ready(() => {
     // promiseFunc();
     // promiseFunc2();
     // promiseFunc3();
-    generatorRunner();
+
 });
