@@ -55,6 +55,6 @@ $(document).ready(() => {
     // asyncProc();
     // promiseFunc();
     // promiseFunc2();
-    promiseFunc3();
-
+    // promiseFunc3();
+    generatorRunner();
 });

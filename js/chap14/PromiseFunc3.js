@@ -80,10 +80,11 @@ function promiseFunc3() {
 
     }
 
-
-    countdown(3).then(addTimeout(launch, 4*1000))
+    countdown(3).then(addTimeout(launch, 4))
         .then((msg) =>{
+
             console.log(msg)
+
         })
         .catch((err) => {
 
