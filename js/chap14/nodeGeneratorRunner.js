@@ -43,7 +43,7 @@ function readFile(fileName) {
 }
 
 // ファイル書き込み処理
-function writeFile() {
+function writeFile(fileName, data) {
 
     return new Promise(
         
@@ -51,8 +51,8 @@ function writeFile() {
 
             // ファイル書き込み処理を実行する
             fs.writeFile(
-                fileName,
-                data,
+                fileName, 
+                data, 
                 err => err ? onRejected(err) : onFulfilled('OK'));
 
         }
@@ -71,3 +71,5 @@ function* fileReadAndWrite() {
     yield writeFile('gd.txt', dataA + dataB + dataC);
 
 }
+
+grun(fileReadAndWrite);
