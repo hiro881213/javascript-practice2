@@ -61,7 +61,10 @@ function dateProc() {
         // 2016/05/16 17:00:00
         consoleFunc(new Date(1463443200000));
 
+        console.log('------UNIXエポックから負の日時指定------');
 
+        // 1969/01/01 09:00:00
+        consoleFunc(new Date(-365 * 24 * 60 * 60 * 1000));
 
     }
 }
