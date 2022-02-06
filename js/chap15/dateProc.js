@@ -50,6 +50,18 @@ function dateProc() {
         // 2017/02/14 13:30:05:05
         consoleFunc(new Date(2017, 1, 14, 13, 30, 5, 500));
 
+        console.log('------UNIXエポックから経過した時間------');
+
+        // 1970/01/01 09:00:00
+        consoleFunc(new Date(0));
+
+        // 1970/01/01 09:00:01
+        consoleFunc(new Date(1000));
+
+        // 2016/05/16 17:00:00
+        consoleFunc(new Date(1463443200000));
+
+
 
     }
 }
