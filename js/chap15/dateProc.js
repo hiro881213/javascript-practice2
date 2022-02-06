@@ -66,5 +66,13 @@ function dateProc() {
         // 1969/01/01 09:00:00
         consoleFunc(new Date(-365 * 24 * 60 * 60 * 1000));
 
+        console.log('------日時を表す文字列------');
+
+        // 1903 01/14 00:00:00
+        consoleFunc(new Date('June 14,1903'))
+
+        // 1903 01/14 09:00:00
+        consoleFunc(new Date('June 14 1903 GMT-0000'));
+
     }
 }
