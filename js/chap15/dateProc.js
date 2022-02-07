@@ -105,6 +105,15 @@ function dateProc() {
         console.log(after.d instanceof Date);
         console.log(typeof after.d);
 
+        console.log('------JSONをDateに戻す------');
+
+        console.log(after.d);
+        after.d = new Date(after.d);
+
+        console.log(after.d instanceof Date);
+        console.log(after.d);
+
+
 
     }
 }
