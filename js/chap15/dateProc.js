@@ -75,4 +75,14 @@ function dateProc() {
         consoleFunc(new Date('June 14 1903 GMT-0000'));
 
     }
+    {
+
+        console.log('------UTC日時------');
+
+        const d = new Date(Date.UTC(2017, 1, 14));
+        console.log(d);
+
+
+    }
+
 }
