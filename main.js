@@ -59,6 +59,5 @@ $(document).ready(() => {
 
     // chap15
     // dateProc();
-    dateProc2();
 
 });
