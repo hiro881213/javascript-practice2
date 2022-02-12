@@ -113,7 +113,36 @@ function dateProc() {
         console.log(after.d instanceof Date);
         console.log(after.d);
 
+    }
 
+    {
+
+        console.log('------数値による引き渡し------');
+        
+        // Dateオブジェクト
+        const before = {
+
+            d: new Date().valueOf()
+
+        };
+
+        // UNIXエポックからのミリ秒数
+        console.log(before.d);
+        console.log(typeof before.d);
+
+        // JSONに変換する
+        const json = JSON.stringify(before);
+        console.log(json);
+
+        // JSONからの復元
+        const after = JSON.parse(json);
+        console.log(after);
+        console.log(typeof after.d);
+
+        // Date型を時刻に変換する
+        const d = new Date(after.d);
+        console.log(d);
 
     }
+
 }
