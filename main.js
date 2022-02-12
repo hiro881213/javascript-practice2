@@ -58,5 +58,7 @@ $(document).ready(() => {
     // promiseFunc3();
 
     // chap15
-    dateProc();
+    // dateProc();
+    dateProc2();
+
 });
