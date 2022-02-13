@@ -26,3 +26,14 @@ console.log(m.format());
 // mは1/31になる
 m.endOf('month');
 console.log(m.format());
+
+console.log('------MomentJSのメソッドチェーン------');
+
+console.log(moment().format());
+
+const mm = moment()
+            .add(10, 'hours')       // 10時間加算
+            .subtract(3, 'days')    // 3日減算
+            .endOf('month');
+
+console.log(mm.format());
