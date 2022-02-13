@@ -37,3 +37,50 @@ const mm = moment()
             .endOf('month');
 
 console.log(mm.format());
+
+console.log('------相対的な日時の利用------');
+
+// a few seconds ago
+console.log(moment().fromNow());
+console.log(moment().subtract(1, 'year').format());
+
+console.log('===========');
+
+// a few seconds ago
+console.log(moment().subtract(10, 'seconds').fromNow());
+
+// a few seconds ago
+console.log(moment().subtract(44, 'seconds').fromNow());
+
+// a minute ago
+console.log(moment().subtract(45, 'seconds').fromNow());
+
+console.log('===========');
+
+// 5 minutes ago
+console.log(moment().subtract(5, 'minutes').fromNow());
+
+// 44 minutes ago
+console.log(moment().subtract(44, 'minutes').fromNow());
+
+// an hour ago
+console.log(moment().subtract(45, 'minutes').fromNow());
+
+console.log('===========');
+
+// 5 hours ago
+console.log(moment().subtract(5, 'hours').fromNow());
+
+// 21 hours ago
+console.log(moment().subtract(21, 'hours').fromNow());
+
+// a day ago
+console.log(moment().subtract(22, 'hours').fromNow());
+
+console.log('===========');
+
+// 10 months ago
+console.log(moment().subtract(320, 'days').fromNow());
+
+// 10 months ago
+console.log(moment().subtract(321, 'days').fromNow());
