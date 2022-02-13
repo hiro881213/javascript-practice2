@@ -1,0 +1,2 @@
+#node_modulesをPushさせないようにする
+node_modules/
