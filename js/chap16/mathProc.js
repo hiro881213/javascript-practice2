@@ -19,5 +19,27 @@ function mathProc() {
         console.log(x.toFixed(0));
 
     }
+    {
 
+        console.log('------指数表現------');
+
+        const x = 3800.5;
+
+        // 3.8005e+3
+        console.log(x.toExponential(4));
+
+        // 3.801e+3
+        console.log(x.toExponential(3));
+
+        // 3.80e+3
+        console.log(x.toExponential(2));
+
+        // 3.8e+3
+        console.log(x.toExponential(1));
+
+        // 4e+3
+        console.log(x.toExponential(0));
+
+
+    }
 }
