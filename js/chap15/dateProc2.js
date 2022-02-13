@@ -84,6 +84,50 @@ function dateProc2() {
         const daysDiff = msDiff / 1000 / 60 / 60 / 24;
         console.log(daysDiff);
 
+    }
+
+    {
+
+        console.log('------日時の演算2------');
+
+        const dates = [];
+        
+        const min = new Date(2017, 0, 1).valueOf();
+
+        /* 差 */
+        const delta = new Date(2020, 0, 1).valueOf() - min;
+
+        for (let i = 0; i < 10; i ++) {
+
+            dates.push(new Date(min + delta*Math.random()));
+
+        }
+
+        printDates(dates);
+
+        console.log("----");
+
+        // 降順にソート
+        dates.sort((a, b) => b - a);
+        printDates(dates);
+
+        console.log("----");
+
+        // 昇順にソート
+        dates.sort((a, b) => a - b);
+        printDates(dates);
+
+        function printDates(dates) {
+
+            for ( let i = 0; i < dates.length; i++ ) {
+
+                const d = dates[i];
+                console.log(`${i}.${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`);
+
+            }
+
+        }
 
     }
+
 }
