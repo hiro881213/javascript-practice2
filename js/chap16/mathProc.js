@@ -86,6 +86,8 @@ function mathProc() {
         // 2e+1
         console.log(x.toPrecision(1));
 
+        alert('');
+
     }
 
 }
