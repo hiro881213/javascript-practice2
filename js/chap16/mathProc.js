@@ -157,6 +157,12 @@ function mathProc() {
         console.log(Math.log10(10));
         console.log(Math.log10(16.7));
 
+        console.log('------2を底とするxの対数------');
+
+        console.log(Math.log2(2));
+        console.log(Math.log2(5));
+
+
     }
 
 }
