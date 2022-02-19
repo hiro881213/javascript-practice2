@@ -128,6 +128,11 @@ function mathProc() {
         console.log(Math.cbrt(27));
         console.log(Math.cbrt(22));
 
+        console.log('------eの累乗------');
+
+        console.log(Math.exp(1));
+        console.log(Math.exp(5.5));
+
     }
 
 }
