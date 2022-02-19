@@ -145,4 +145,13 @@ function mathProc() {
 
     }
 
+    {
+
+        console.log('------自然対数の算出------');
+
+        console.log(Math.log(Math.E));
+        console.log(Math.log(17.5));
+
+    }
+
 }
