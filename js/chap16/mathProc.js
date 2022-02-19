@@ -122,7 +122,12 @@ function mathProc() {
     
         console.log(Math.sqrt(16));
         console.log(Math.sqrt(15.5));
-    
+        
+        console.log('------立方根------');
+
+        console.log(Math.cbrt(27));
+        console.log(Math.cbrt(22));
+
     }
 
 }
