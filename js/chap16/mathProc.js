@@ -152,6 +152,11 @@ function mathProc() {
         console.log(Math.log(Math.E));
         console.log(Math.log(17.5));
 
+        console.log('------10を底とするxの対数------');
+
+        console.log(Math.log10(10));
+        console.log(Math.log10(16.7));
+
     }
 
 }
