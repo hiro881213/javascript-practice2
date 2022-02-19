@@ -88,4 +88,27 @@ function mathProc() {
 
     }
 
+    {
+
+        console.log("------基数の指定------");
+
+        const x = 12;
+
+        // 10進数
+        console.log(x.toString());
+
+        // 10進数
+        console.log(x.toString(10))
+
+        // 16進数
+        console.log(x.toString(16));
+
+        // 8進数
+        console.log(x.toString(8));
+
+        // 2進数
+        console.log(x.toString(2));
+
+    }
+
 }
