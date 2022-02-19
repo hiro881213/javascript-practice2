@@ -133,6 +133,11 @@ function mathProc() {
         console.log(Math.exp(1));
         console.log(Math.exp(5.5));
 
+        console.log('------e^x-1の算出------');
+
+        console.log(Math.expm1(1));
+        console.log(Math.expm1(5.5));
+
     }
 
 }
