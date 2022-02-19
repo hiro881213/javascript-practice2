@@ -176,6 +176,11 @@ function mathProc() {
         console.log(Math.abs(-5.5));
         console.log(Math.abs(5.5));
 
+        console.log('------sign------');
+
+        console.log(Math.sign(-10.5));
+        console.log(Math.sign(6.77));
+
     }
 
 }
