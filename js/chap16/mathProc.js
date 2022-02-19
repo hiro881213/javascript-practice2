@@ -138,6 +138,11 @@ function mathProc() {
         console.log(Math.expm1(1));
         console.log(Math.expm1(5.5));
 
+        console.log('------和の平方根の算出------');
+
+        console.log(Math.hypot(3, 4));
+        console.log(Math.hypot(2, 3, 4));
+
     }
 
 }
