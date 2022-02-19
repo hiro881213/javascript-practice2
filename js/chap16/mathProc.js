@@ -86,8 +86,6 @@ function mathProc() {
         // 2e+1
         console.log(x.toPrecision(1));
 
-        alert('');
-
     }
 
     {
@@ -111,6 +109,15 @@ function mathProc() {
         // 2進数
         console.log(x.toString(2));
 
+    }
+
+    {
+
+        console.log('------累乗------');
+        
+        console.log(Math.pow(2, 3));
+        console.log(Math.pow(1.7, 2.3));
+    
     }
 
 }
