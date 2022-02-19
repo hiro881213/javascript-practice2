@@ -196,6 +196,13 @@ function mathProc() {
         console.log(Math.trunc(7.7));
         console.log(Math.trunc(-5.8));
 
+        console.log('------round------');
+
+        console.log(Math.round(7.2));
+        console.log(Math.round(7.7));
+        console.log(Math.round(-7.7));
+        console.log(Math.round(-7.2));
+
     }
 
 }
