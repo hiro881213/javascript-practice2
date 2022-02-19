@@ -169,4 +169,13 @@ function mathProc() {
 
     }
 
+    {
+
+        console.log('------絶対値------');
+
+        console.log(Math.abs(-5.5));
+        console.log(Math.abs(5.5));
+
+    }
+
 }
