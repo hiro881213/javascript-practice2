@@ -185,6 +185,13 @@ function mathProc() {
 
         console.log(Math.ceil(2.2));
         console.log(Math.ceil(-3.8));
+
+        console.log('------floor------');
+
+        console.log(Math.floor(2.8));
+        console.log(Math.floor(-3.2));
+
+
     }
 
 }
