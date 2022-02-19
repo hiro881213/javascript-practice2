@@ -117,6 +117,11 @@ function mathProc() {
         
         console.log(Math.pow(2, 3));
         console.log(Math.pow(1.7, 2.3));
+        
+        console.log('------平方根------');
+    
+        console.log(Math.sqrt(16));
+        console.log(Math.sqrt(15.5));
     
     }
 
