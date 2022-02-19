@@ -191,6 +191,10 @@ function mathProc() {
         console.log(Math.floor(2.8));
         console.log(Math.floor(-3.2));
 
+        console.log('------trunc------');
+
+        console.log(Math.trunc(7.7));
+        console.log(Math.trunc(-5.8));
 
     }
 
