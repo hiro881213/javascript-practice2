@@ -181,6 +181,10 @@ function mathProc() {
         console.log(Math.sign(-10.5));
         console.log(Math.sign(6.77));
 
+        console.log('------ceil------');
+
+        console.log(Math.ceil(2.2));
+        console.log(Math.ceil(-3.8));
     }
 
 }
