@@ -238,5 +238,10 @@ function mathProc() {
         console.log("cos:" + Math.cos(Math.PI));
         console.log("cos:" + Math.cos(Math.PI/4));
 
+        console.log("------三角関数tan------");
+
+        console.log("tan:" + Math.tan(Math.PI/4));
+        console.log("tan:" + Math.tan(0));
+
     }
 }
