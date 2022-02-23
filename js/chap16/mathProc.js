@@ -272,6 +272,14 @@ function mathProc() {
 
         console.log("45度→" + deg2red(45));
 
+        console.log("------角度変換------");
+
+        function red2deg(r) {
+            return r / Math.PI * 180;
+        }
+
+        console.log("Math.PI/4→" + red2deg(Math.PI/4));
+
     }
 
 }
