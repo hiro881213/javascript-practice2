@@ -243,5 +243,11 @@ function mathProc() {
         console.log("tan:" + Math.tan(Math.PI/4));
         console.log("tan:" + Math.tan(0));
 
+        console.log("------三角関数asin------");
+
+        console.log("asin:" + Math.asin(0));
+        console.log("asin:" + Math.asin(Math.SQRT1_2));
+
+
     }
 }
