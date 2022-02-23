@@ -257,7 +257,12 @@ function mathProc() {
 
         console.log("atan:" + Math.atan(0));
         console.log("atan:" + Math.atan(Math.SQRT1_2));
-    
+
+        console.log("------三角関数atan2------");
+
+        console.log("atan2:" + Math.atan2(0, 1));
+        console.log("atan2:" + Math.atan2(1, 1));
+
     }
 
 }
