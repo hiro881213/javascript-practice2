@@ -248,6 +248,9 @@ function mathProc() {
         console.log("asin:" + Math.asin(0));
         console.log("asin:" + Math.asin(Math.SQRT1_2));
 
+        console.log("------三角関数acos------");
 
+        console.log("acos:" + Math.acos(0));
+        console.log("acos:" + Math.acos(Math.SQRT1_2));
     }
 }
