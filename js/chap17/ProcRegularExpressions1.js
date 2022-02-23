@@ -37,4 +37,14 @@ function ProcRegularExpressions1() {
 
     console.log(input.toLowerCase().startsWith('as'));
 
+    console.log("------replace------");
+
+    const output = input.replace("going", "walking");
+    console.log(output);
+
+    let output2 = input2.replace("イギリス", "英国");
+    output2 = output2.replace("名前", "名称");
+
+    console.log(output2);
+
 }
