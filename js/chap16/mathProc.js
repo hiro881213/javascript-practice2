@@ -203,6 +203,12 @@ function mathProc() {
         console.log(Math.round(-7.7));
         console.log(Math.round(-7.2));
 
+        console.log('------min------');
+
+        console.log(Math.min(1, 2));
+        console.log(Math.min(3, 0.5, 0.66));
+        console.log(Math.min(3, 0.5, -0.66));
+
     }
 
 }
