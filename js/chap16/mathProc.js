@@ -224,8 +224,14 @@ function mathProc() {
         // 10~15の整数
         console.log("10~15の整数:" + (10 + Math.floor((15 - 10) * Math.random())));
 
-        
-
     }
 
+    {
+
+        console.log("------三角関数sin------");
+
+        console.log("sin:" + Math.sin(Math.PI / 2));
+        console.log("sin:" + Math.sin(Math.PI / 4));
+
+    }
 }
