@@ -91,5 +91,12 @@ function ProcRegularExpressions1() {
         console.log(re.exec(input));
         console.log(re.exec(input));
 
+        console.log("------正規表現のリテラルの利用------");
+
+        console.log(input.match(/\w{3,}/ig));
+        console.log(input.match(/\w{3,}/i));
+        console.log(input.search(/\w{3,}/ig));
+
+
     }
 }
