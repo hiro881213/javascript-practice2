@@ -252,5 +252,12 @@ function mathProc() {
 
         console.log("acos:" + Math.acos(0));
         console.log("acos:" + Math.acos(Math.SQRT1_2));
+    
+        console.log("------三角関数atan------");
+
+        console.log("atan:" + Math.atan(0));
+        console.log("atan:" + Math.atan(Math.SQRT1_2));
+    
     }
+
 }
