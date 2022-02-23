@@ -289,5 +289,10 @@ function mathProc() {
         console.log(Math.sinh(0));
         console.log(Math.sinh(1));
 
+        console.log("------双曲余弦------");
+
+        console.log(Math.cosh(0));
+        console.log(Math.cosh(1));
+
     }
 }
