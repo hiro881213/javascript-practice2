@@ -263,6 +263,15 @@ function mathProc() {
         console.log("atan2:" + Math.atan2(0, 1));
         console.log("atan2:" + Math.atan2(1, 1));
 
+        console.log("------ラジアン変換------");
+
+        // ラジアン変換関数
+        function deg2red(d) {
+            return d / 180 * Math.PI;
+        }
+
+        console.log("45度→" + deg2red(45));
+
     }
 
 }
