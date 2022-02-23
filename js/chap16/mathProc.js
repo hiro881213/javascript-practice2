@@ -215,6 +215,17 @@ function mathProc() {
         console.log(Math.max(3, 0.5, 0.66));
         console.log(Math.max(-3, 0.5, 0.66));
 
+        console.log('------乱数------');
+        console.log(Math.random());
+        
+        // 1~10
+        console.log("1~10:" + (1 + (10 - 1) * Math.random()));
+    
+        // 10~15の整数
+        console.log("10~15の整数:" + (10 + Math.floor((15 - 10) * Math.random())));
+
+        
+
     }
 
 }
