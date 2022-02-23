@@ -282,4 +282,12 @@ function mathProc() {
 
     }
 
+    {
+
+        console.log("------双曲正弦------");
+
+        console.log(Math.sinh(0));
+        console.log(Math.sinh(1));
+
+    }
 }
