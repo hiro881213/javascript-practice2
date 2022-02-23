@@ -233,5 +233,10 @@ function mathProc() {
         console.log("sin:" + Math.sin(Math.PI / 2));
         console.log("sin:" + Math.sin(Math.PI / 4));
 
+        console.log("------三角関数cos------");
+
+        console.log("cos:" + Math.cos(Math.PI));
+        console.log("cos:" + Math.cos(Math.PI/4));
+
     }
 }
