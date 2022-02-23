@@ -66,6 +66,8 @@ function ProcRegularExpressions1() {
         // 正規表現にマッチするかtrue/falseで返す
         console.log(re.test(input));
 
+        console.log("------正規表現の生成（2）------");
+
         // execは文字位置を記憶する
         let a = re.exec(input);
         
@@ -80,7 +82,14 @@ function ProcRegularExpressions1() {
         // 対象文字列
         console.log(a.input);
 
+        console.log("------正規表現の生成（3）------");
 
+        // [ "Saint" ]
+        console.log(re.exec(input));
+
+        // [ "Ives" ]
+        console.log(re.exec(input));
+        console.log(re.exec(input));
 
     }
 }
