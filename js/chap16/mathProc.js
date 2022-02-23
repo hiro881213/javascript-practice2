@@ -299,5 +299,10 @@ function mathProc() {
         console.log(Math.tanh(0));
         console.log(Math.tanh(1));
 
+        console.log("------逆双曲正弦------");
+
+        console.log(Math.asinh(0));
+        console.log(Math.asinh(1));
+
     }
 }
