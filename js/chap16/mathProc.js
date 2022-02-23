@@ -209,6 +209,12 @@ function mathProc() {
         console.log(Math.min(3, 0.5, 0.66));
         console.log(Math.min(3, 0.5, -0.66));
 
+        console.log('------max------');
+
+        console.log(Math.max(1, 2));
+        console.log(Math.max(3, 0.5, 0.66));
+        console.log(Math.max(-3, 0.5, 0.66));
+
     }
 
 }
