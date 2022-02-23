@@ -32,4 +32,9 @@ function ProcRegularExpressions1() {
     console.log(input2.indexOf("町", 10));
     console.log(input2.indexOf("アメリカ"));
 
+
+    console.log("------単純マッチングとtoLowerCase------");
+
+    console.log(input.toLowerCase().startsWith('as'));
+
 }
