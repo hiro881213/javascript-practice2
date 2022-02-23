@@ -294,5 +294,10 @@ function mathProc() {
         console.log(Math.cosh(0));
         console.log(Math.cosh(1));
 
+        console.log("------双曲正接------");
+
+        console.log(Math.tanh(0));
+        console.log(Math.tanh(1));
+
     }
 }
