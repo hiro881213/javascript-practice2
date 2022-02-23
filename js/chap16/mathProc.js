@@ -304,5 +304,10 @@ function mathProc() {
         console.log(Math.asinh(0));
         console.log(Math.asinh(1));
 
+        console.log("------逆双曲余弦------");
+
+        console.log(Math.acosh(0));
+        console.log(Math.acosh(1));
+
     }
 }
