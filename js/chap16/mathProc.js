@@ -309,5 +309,10 @@ function mathProc() {
         console.log(Math.acosh(0));
         console.log(Math.acosh(1));
 
+        console.log("------逆双曲正接------");
+
+        console.log(Math.atanh(0));
+        console.log(Math.atanh(1));
+
     }
 }
