@@ -57,11 +57,30 @@ function ProcRegularExpressions1() {
 
         const re = /\w{3,}/ig;
         
-        // 正規表現での検索
+        // 正規表現での検索し
         console.log(input.match(re));
 
         // 最初に見つかるものの位置を検索
         console.log(input.search(re));
+
+        // 正規表現にマッチするかtrue/falseで返す
+        console.log(re.test(input));
+
+        // execは文字位置を記憶する
+        let a = re.exec(input);
+        
+        // [ 'going', index: 9, input: 'As I was going to Saint Ives' ]
+        console.log(a);
+
+        console.log(a[0]);
+
+        // 文字列の位置を取得
+        console.log(a.index);
+
+        // 対象文字列
+        console.log(a.input);
+
+
 
     }
 }
